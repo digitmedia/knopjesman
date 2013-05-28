@@ -1,0 +1,370 @@
+/* 
+    Document   : buttonman
+    Created on : 15-apr-2013, 11:37:16
+    Author     : jannickvandaele
+    Description:
+        Purpose of the stylesheet follows.
+        */
+        @import url("../fonts/opensans.css");
+
+        html, body{
+            width: 1024px; /* iPad Resolution */
+            height: 748px; /* iPad Resolution */
+            background: #000;
+            font-family: 'OpenSansRegular';
+            color: #FFFFFF;
+
+        }
+        .info{
+            background: url("../img/plain-background.jpg");
+            background-size:1024px 768px;
+            background-repeat:no-repeat;
+            width: 944px; /* iPad Resolution */
+            height: 668px;
+            padding: 40px;
+        }
+        .hoofdmenu{
+            background: url("../img/hoofdmenu.jpg");
+            background-size:1024px 768px;
+            background-repeat:no-repeat;
+        }
+
+        .algemeen{
+            background: url("../img/background-algemeen.png");  
+            background-size:1024px 768px;
+            background-repeat:no-repeat;
+            width: 944px; /* iPad Resolution */
+            height: 668px;
+            padding: 40px;
+        }
+        .langmenu{
+            background: url("../img/background-lang.jpg");  
+            background-size:1024px 768px;
+            background-repeat:no-repeat;
+            width: 944px; /* iPad Resolution */
+            height: 668px;
+            padding: 40px;
+        }
+
+        .algemeen h1{
+            font-size: 42px;
+            line-height: 50px;
+        }
+
+        .footer {
+            height:92px;
+            color: #b03911;
+            padding: 50px 35px;
+        }
+
+        .footer img{
+            float: right;
+        }
+
+        .footer a{
+            width: 100%;
+            height: 100%;
+        }
+
+        .hoofdmenu .links {
+            width: 624px;
+            float: left;
+        }
+
+        .rechts {
+            width: 400px;
+            float: right;
+            height: 700px;
+            background: url("../img/shadow.png") left no-repeat;
+            background-size: 11px 567px;
+        }
+
+        .langmenu .rechts {
+            width: 542px;
+            float: right;
+            height: 700px;
+            background: none;
+
+        }
+
+        .langmenu  .links {
+            width: 402px;
+            float: left;
+            height: 700px;
+            background: url("../img/shadow.png") left no-repeat;
+            background-size: 11px 567px;
+            -moz-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            -webkit-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            -o-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            -ms-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        }
+
+        .langmenu .deco {
+            height: 10px;
+            width: 582px;
+            background-color: #ef3e2e;
+        }
+
+
+        .deco {
+            height: 10px;
+            background-color: #ef3e2e;
+        }
+
+        .margin {
+            padding:20px 30px;
+        }
+
+        .marginside {
+            padding:0 30px;
+        }
+
+        .titles {
+            padding: 50px 30px;
+        }
+
+        .menu li {
+            height: 62px;
+            line-height: 60px;
+            background: url("../img/button.png");
+            background-size: 564px auto;
+            margin-bottom: 10px; 
+            padding-left:20px;
+            color: #ef3e2e;    
+            height: 62px;
+            width: 544px;
+            font-size: 30px;
+            letter-spacing:-2px
+        }
+
+        .langmenu li {
+            height: 62px;
+            line-height: 60px;
+            background: url("../img/button.png");
+            background-size: 512px auto;
+            margin-bottom: 10px; 
+            padding-left:20px;
+            color: #ef3e2e;    
+            height: 56px;
+            width: 492px;
+            font-size: 30px;
+            letter-spacing:-2px
+        }
+
+        h1, h2 {
+            color: #ef3e2e;
+        }
+
+        h1{
+            font-size: 47px;
+        }
+
+        h2{
+            font-size: 28px;
+        }
+
+        ul {
+            -webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+        }
+
+        .reverse{
+            -moz-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            -webkit-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            -o-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            -ms-transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+            transform: scale(1) rotate(180deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+        }
+
+        .margin-top{
+            margin-top: 20px;
+        }
+
+        .info-left{
+            float: left;
+            width: 200px;
+            height: 50px;
+            padding-top: 580px;
+        }
+
+        .info-right{
+            float: right;
+            width: 744px;
+            height: 630px;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+            color: #000;
+        }
+
+        .info-right h1{
+            display: inline-block;
+            height: 30px;
+            font-size: 30px;
+            padding-bottom: 10px;
+            border-bottom: #ef3e2e 1px solid;  
+        }
+
+        .info-right a{
+            color: #ef3e2e;  
+        }
+
+        .info-right p, .info-right h3{
+            margin: 15px 0px;
+            width: 100%;
+        }
+
+        .info-right strong{
+            font-family: "OpenSansBold";
+        }
+
+        .info-right h3{
+            font-family: "OpenSansSemiboldItalic";
+        }
+
+        .underline {
+            border-bottom: #ef3e2e 1px solid;  
+        }
+
+        .controls {
+            background-color: rgba(0,0,0,0.7);
+            width: 100%;
+            height: 40px;
+            padding: 0 34px;
+            -moz-box-sizing: border-box; 
+            -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
+            position: relative;
+            top:-42px;
+        }
+
+        .videocontainer{
+            background-color: #000;
+            z-index: 20;
+            height: 531px;
+        }
+
+        .fullscreen{
+            position : absolute;
+            width: 1024px;
+            height: 748px;
+            top: 0px;
+            left: 0px;
+        }
+
+        .fixedbottom{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            top: 708px;
+            padding-left: 74px;
+            -moz-box-sizing: border-box; 
+            -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
+
+        }
+
+        .bottomsrt{
+            position: absolute !important;
+            bottom: 0  !important;
+            left: 0  !important;
+            width: 1024px !important;
+            padding: 0 25%;
+            top: 630px  !important;
+            -moz-box-sizing: border-box; 
+            -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
+        }
+
+        .controls div{
+            float: left;
+            height: 44px;
+            line-height: 40px;
+            font-size: 12px;
+
+        }
+        .controls_remaining, .controls_current{
+            width: 30px;
+            text-align: center;
+        }
+
+        .controls_play span, .controls_fullscreen span{
+            font-size: 20px !important;
+            line-height: 40px;
+        }
+
+        .controls_play{
+            margin-right: 50px;
+        }
+
+        .controls_slider{
+            margin: 0 20px;
+        }
+
+        .controls_fullscreen{
+            margin-left: 50px;
+        }
+
+        .controls_slider{
+            width: 200px;
+        }
+
+        .srt{
+            font-size: 20px;
+            position: relative;
+            top: -130px;
+            color: #FFFFFF;
+
+            text-align: center;
+            height: 45px;
+            width: 50%;
+            margin: auto;
+            font-family: Helvetica, Arial, sans-serif;
+            text-shadow:
+                -3px -3px 3px rgba(0,0,0,0.7),
+                 3px -3px 3px rgba(0,0,0,0.7),
+                -3px  3px 3px rgba(0,0,0,0.7),
+                 3px  3px 3px rgba(0,0,0,0.7); 
+            opacity: 1;
+        }
+
+        .noselect{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        #social-stream, .social-stream{
+            height:100%;
+            width: 100%;
+            }
+
+        .return{
+            float: left;
+            position: relative;
+            top: -32px;
+        }
+
+        .pageselect span{
+            padding: 5px 5px 5px 40px;
+
+        }
+
+        .down{
+            background-color: #ef3e2e;
+            color: #f9f7f3;
+
+        }
+
+        .pageselect a{
+            height: 45px;
+            text-decoration: none;
+            color: #ef3e2e;
+            font-size: 30px;
+            line-height: 45px;
+            display: block;
+        }
+
+

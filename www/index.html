@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/buttonman.css" />
+        <title>Buttonman</title>
+    </head>
+    <body onload="onBodyLoad()">
+        <div class="wrapper">
+
+            
+                <video width="1024" height="576" autoplay>
+                    <source src="video/Teaser.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            <section class="footer">
+                <img src="img/arrow.png" height="42"/>
+            </section>
+          
+        </div>
+        <script type="text/javascript" src="cordova-2.6.0.js"></script>
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                //NAAR HOME BIJ KLIK OP PIJLTJE (FOOTER)
+                $(".footer").click(function(){
+                    window.location = "lang.html";
+                })
+                
+                //AUTOMATISCH NAAR HOME GAAN NA FILMPJE
+                $("video").bind('ended', function(){
+                        window.location = "lang.html";
+                  });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".return").click(function() {
+                    window.location = "home.html";
+                });
+            });
+            var lang;
+            // global variables
+            if (localStorage.getItem("lang") === null) {
+                var lang = 'nl';
+            } else {
+                var lang = window.localStorage.getItem("lang");
+            }
+            
+            var db;
+            var shortName = 'ButtonManDB';
+            var version = '1.0';
+            var displayName = 'ButtonManDB';
+            var maxSize = 200000;
+
+            // this is called when an error happens in a transaction
+            function errorHandler(nr) {
+                console.log('Error:'+nr);
+
+            }
+
+            // this is called when a successful transaction happens
+            function successCallBack() {
+                console.log("DEBUGGING: success");
+            }
+            function nullHandler() {
+            }
+
+            // called when the application loads
+            function onBodyLoad() {
+
+                // This console.log is used to make sure the application is loaded correctly
+                // you can comment this out once you have the application working
+                console.log("DEBUGGING: we are in the onBodyLoad() function");
+
+                if (!window.openDatabase) {
+                    console.log('Databases are not supported in this browser.');
+                    return;
+                }
+                //Create Database
+                
+                db = openDatabase(shortName, version, displayName, maxSize);
+
+                //Create Table
+                db.transaction(createTable, errorHandler, fillIfEmpty);
+
+
+
+
+            }
+
+
+            function createTable(tx) {
+                tx.executeSql( 'DROP TABLE MENU',nullHandler,nullHandler);
+                tx.executeSql( 'DROP TABLE PIECES',nullHandler,nullHandler);
+                //tx.executeSql( 'DROP TABLE TEXTS',nullHandler,nullHandler);
+                
+                //TEXTS TABLE
+                //tx.executeSql('CREATE TABLE IF NOT EXISTS TEXTS (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, page TEXT NOT NULL, date DATETIME NOT NULL)', [], nullHandler, errorHandler);
+                
+                //MENU TABLE
+                tx.executeSql('CREATE TABLE IF NOT EXISTS MENU (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, page TEXT, internetreq TEXT NOT NULL, menu TEXT NOT NULL)', [], nullHandler, errorHandler);
+
+                //PIECES TABLE
+                tx.executeSql('CREATE TABLE IF NOT EXISTS PIECES (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, key TEXT NOT NULL, page TEXT NOT NULL)', [], nullHandler, errorHandler);
+            }
+
+
+            function fillIfEmpty() {
+                //Fill Table if empty   
+                console.log("DEBUGGING: check if empty")
+                db.transaction(function(transaction) {
+                    transaction.executeSql('SELECT * FROM MENU', [],
+                            function(transaction, result) {
+                                if (result.rows.length === 0) {
+                                    console.log("DEBUGGING: Table Empty");
+                                    db.transaction(populateDB, errorHandler, successCallBack);
+                                } else {
+                                    console.log("DEBUGGING: Table not empty: " + result.rows.length + " rows");
+                                    successCallBack();
+                                }
+                            }, errorHandler);
+                }, errorHandler);
+            }
+
+            function populateDB(tx) {
+            
+                // HOME MENU
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (1, "nl" ,"Teaser"                                  ,"teaser"   , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (2, "nl" ,"Hoofdfilm – speel alles"                 ,"movie"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (3, "nl" ,"Hoofdfilm – kies een scène"              ,"scene"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (4, "nl" ,"Extra&#39;s"                             ,"extra"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (5, "nl" ,"Info &amp; Credits"                      ,"info"     , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (6, "nl" ,"Social"                                  ,"social"   , "true" , "home")');
+                            
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (7, "fr" ,"Teaser"                                  ,"teaser"   , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (8, "fr" ,"Film principal – tout voir"              ,"movie"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (9, "fr" ,"Sélectionner une scène"                  ,"scene"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (10, "fr" ,"Extras"                                 ,"extra"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (11, "fr" ,"Info &amp; Credits"                     ,"info"     , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (12, "fr" ,"Social"                                 ,"social"   , "true" , "home")');
+                            
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (13, "en" ,"Teaser"                                 ,"teaser"   , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (14, "en" ,"Main film – play all"                   ,"movie"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (15, "en" ,"Main film – select a scene"             ,"scene"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (16, "en" ,"Extras"                                 ,"extra"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (17, "en" ,"Info &amp; Credits"                     ,"info"     , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (18, "en" ,"Social"                                 ,"social"   , "true" , "home")');
+                            
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (19, "de" ,"Teaser"                                 ,"teaser"   , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (20, "de" ,"Hauptfilm – alles abspielen"            ,"movie"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (21, "de" ,"Hauptfilm – Szene auswählen"            ,"scene"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (22, "de" ,"Extras"                                 ,"extra"    , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (23, "de" ,"Info &amp; Credits"                     ,"info"     , "false", "home")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (24, "de" ,"Social"                                 ,"social"   , "true" , "home")');
+                
+                // SCENES MENU
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (25, "nl", "Vrije tijd"                                          ,"00:00:00", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (26, "nl", "Vrije tijd in een warm nest"                         ,"02:38:14", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (27, "nl", "Activiteiten in het nest"                            ,"05:02:09", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (28, "nl", "Op stap in de buurt, deel van het web"               ,"06:53:05", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (29, "nl", "Activiteiten met webpartners"                        ,"10:00:16", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (30, "nl", "Ouders, school en andere partners"                   ,"15:19:22", "false", "scenes")');
+      
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (31, "fr", "Loisirs"                                             ,"00:00:00", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (32, "fr", "Loisirs dans un nid douillet"                        ,"02:38:14", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (33, "fr", "Les activités du nid"                                ,"05:02:09", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (34, "fr", "À la découverte du quartier"                         ,"06:53:05", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (35, "fr", "Les activités avec nos partenaires"                  ,"10:00:16", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (36, "fr", "Parents, école et autres partenaires"                ,"15:19:22", "false", "scenes")');
+                 
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (37, "en", "Free time"                                           ,"00:00:00", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (38, "en", "Free time in a cosy nest"                            ,"02:38:14", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (39, "en", "Activities in the nest"                              ,"05:02:09", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (40, "en", "Out and about in the community"                      ,"06:53:05", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (41, "en", "Activities with network partners"                    ,"10:00:16", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (42, "en", "Parents, school and other partners"                  ,"15:19:22", "false", "scenes")');
+                
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (43, "de", "Freizeit"                                            ,"00:00:00", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (44, "de", "Freizeit in einem warmen Nest"                       ,"02:38:14", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (45, "de", "Aktivitäten im Nest"                                 ,"05:02:09", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (46, "de", "Unterwegs im Viertel, Teil des Netzes"               ,"06:53:05", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (47, "de", "Aktivitäten mit Netzpartnern"                        ,"10:00:16", "false", "scenes")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (48, "de", "Eltern, Schule und weitere Partner"                  ,"15:19:22", "false", "scenes")');
+                
+                // EXTRAS MENU
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (49, "nl", "Sociale experimenteerruimte"                         , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (50, "nl", "Samenwerken met ouders"                              , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (51, "nl", "Huiswerk maken"                                      , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (52, "nl", "Taal en leesplezier"                                 , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (53, "nl", "Groeien in team"                                     , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (54, "nl", "De job als begeleider"                               , "false", "extras")');
+                                 
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (55, "fr", "Un espace d’expérimentation sociale"                 , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (56, "fr", "Le travail avec les parents"                         , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (57, "fr", "Faire les devoirs"                                   , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (58, "fr", "Langue et plaisir de lire "                          , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (59, "fr", "Évoluer en équipe"                                   , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (60, "fr", "Le métier d’éducateur"                               , "false", "extras")');
+                                 
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (61, "en", "Social experience space"                             , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (62, "en", "Working with parents"                                , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (63, "en", "Doing homework"                                      , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (64, "en", "Language and the pleasure of reading"                , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (65, "en", "Growing in a team"                                   , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (66, "en", "Working as an educator"                              , "false", "extras")');
+                                 
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (67, "de", "Sozialer Experimentierraum"                          , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (68, "de", "Zusammenarbeit mit Eltern"                           , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (69, "de", "Hausaufgaben machen"                                 , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (70, "de", "Sprache und Lesespaß"                                , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (71, "de", "Wachsen im Team "                                    , "false", "extras")');
+                tx.executeSql('INSERT INTO MENU (id, lang, val, internetreq, menu) VALUES (72, "de", "Die Stelle als Erzieher"                             , "false", "extras")');
+
+
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (1, "nl", "home"    , "title"               , "Knopjesman")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (2, "fr", "home"    , "title"               , "L’homme aux boutons")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (3, "en", "home"    , "title"               , "Buttonman")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (4, "de", "home"    , "title"               , "Knöpfchenmann")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (5, "nl", "home"    , "subtitle"            , "Keuzes maken in buitenschoolse opvang")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (6, "fr", "home"    , "subtitle"            , "Faire des choix en accueil extra scolaire")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (7, "en", "home"    , "subtitle"            , "Making choices in out of school care")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (8, "de", "home"    , "subtitle"            , "Wahlmöglichkeiten im Hort")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (9, "nl", "home"    , "lang"                , "kies taal")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (10, "fr", "home"   , "lang"                , "Changer la langue")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (11, "en", "home"   , "lang"                , "Change Language")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (12, "de", "home"   , "lang"                , "Sprache auswählen")');
+        
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (13, "nl", "scenes" , "tohome"              , "Hoofdmenu")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (14, "fr", "scenes" , "tohome"              , "Menu Principal")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (15, "en", "scenes" , "tohome"              , "Main menu")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (16, "de", "scenes" , "tohome"              , "Hauptmenü")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (17, "nl", "scenes" , "toextra"             , "Extra&#39;s")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (18, "fr", "scenes" , "toextra"             , "Extras")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (19, "en", "scenes" , "toextra"             , "Extras")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (20, "de", "scenes" , "toextra"             , "Extras")');
+        
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (21, "nl", "extras" , "toscene"             , "Scènes")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (22, "fr", "extras" , "toscene"             , "Scènes")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (23, "en", "extras" , "toscene"             , "Scenes")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (24, "de", "extras" , "toscene"             , "Szenen")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (25, "nl", "extras" , "tohome"              , "Hoofdmenu")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (26, "fr", "extras" , "tohome"              , "Menu Principal")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (27, "en", "extras" , "tohome"              , "Main menu")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (28, "de", "extras" , "tohome"              , "Hauptmenü")'); 
+
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (29, "nl", "all" , "back"              , "Terug")');
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (30, "fr", "all" , "back"              , "Retour")');  
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (31, "en", "all" , "back"              , "Back")');        
+                tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (32, "de", "all" , "back"              , "zurück")');      
+                             
+                console.log("DEBUGGING: Database populated");             
+            }
+        </script>
+    </body>
+</html>
