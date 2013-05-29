@@ -170,7 +170,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2E4E5C17549C3B008E9D30 /* FacebookSDK.framework in Frameworks */,
 				EF25E5541743AD5B00188953 /* AdSupport.framework in Frameworks */,
 				EF25E5521743AD5300188953 /* Social.framework in Frameworks */,
 				EF25E5501743AD4C00188953 /* Accounts.framework in Frameworks */,
@@ -190,6 +189,7 @@
 				301BF5C5109A6A2B0062928A /* SystemConfiguration.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
 				30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */,
+				EF2E4E5C17549C3B008E9D30 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +604,6 @@
 					"$(inherited)",
 					/Users/jannickvandaele/Documents/FacebookSDK,
 					"\"$(SYSTEM_APPS_DIR)/MAMP/htdocs/buttonman/FacebookSDK\"",
-					"\"$(SRCROOT)/FacebookSDK\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -629,7 +628,6 @@
 					"$(inherited)",
 					/Users/jannickvandaele/Documents/FacebookSDK,
 					"\"$(SYSTEM_APPS_DIR)/MAMP/htdocs/buttonman/FacebookSDK\"",
-					"\"$(SRCROOT)/FacebookSDK\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Buttonman/Buttonman-Prefix.pch";
