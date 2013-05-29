@@ -114,8 +114,9 @@
 
 
             function createTable(tx) {
-                tx.executeSql( 'DROP TABLE MENU',nullHandler,nullHandler);
-                tx.executeSql( 'DROP TABLE PIECES',nullHandler,nullHandler);
+                console.log("DEBUGGING: we are in the createTable() function");
+                tx.executeSql( 'DROP TABLE IF EXISTS MENU',nullHandler,nullHandler);
+                tx.executeSql( 'DROP TABLE IF EXISTS PIECES',nullHandler,nullHandler);
                 //tx.executeSql( 'DROP TABLE TEXTS',nullHandler,nullHandler);
                 
                 //TEXTS TABLE
@@ -130,6 +131,7 @@
 
 
             function fillIfEmpty() {
+                console.log("DEBUGGING: we are in the fillIfEmpty() function");
                 //Fill Table if empty   
                 console.log("DEBUGGING: check if empty")
                 db.transaction(function(transaction) {
@@ -147,6 +149,7 @@
             }
 
             function populateDB(tx) {
+                console.log("DEBUGGING: we are in the populateDB() function");
             
                 // HOME MENU
                 tx.executeSql('INSERT INTO MENU (id, lang, val, page, internetreq, menu) VALUES (1, "nl" ,"Teaser"                                  ,"teaser"   , "false", "home")');
