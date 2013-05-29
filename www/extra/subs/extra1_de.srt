@@ -1,57 +1,58 @@
-﻿1
-00:00:07,709 --> 00:00:10,751
+1
+00:00:07,674 --> 00:00:10,719
 Wir glauben,
 dass Kinder voneinander lernen können.
 
 2
-00:00:10,959 --> 00:00:13,999
+00:00:10,927 --> 00:00:13,972
 Wir glauben auch, dass sie
 von ihren Talenten lernen können.
 
 3
-00:00:14,125 --> 00:00:18,334
+00:00:14,097 --> 00:00:18,309
 Dass sie hier geschätzt werden
 aufgrund ihrer Person,
 
 4
-00:00:18,501 --> 00:00:21,292
+00:00:18,476 --> 00:00:21,271
 aufgrund dessen,
 was sie können und wollen.
 
 5
-00:00:23,000 --> 00:00:24,959
+00:00:22,981 --> 00:00:24,941
 Alle Kinder sind bei uns willkommen.
 
 6
-00:00:25,083 --> 00:00:28,250
+00:00:25,066 --> 00:00:28,236
 Es geht uns auch bewusst um Kinder
 aus dem Viertel,
 
 7
-00:00:28,417 --> 00:00:32,083
+00:00:28,403 --> 00:00:32,073
 die aus wirtschaftlichen Gründen
 vielleicht keine Betreuung brauchen,
 
 8
-00:00:32,250 --> 00:00:35,792
+00:00:32,240 --> 00:00:35,785
 die aber gerne kommen würden,
 um hier tolle Sachen zu machen,
 
 9
-00:00:35,959 --> 00:00:38,125
+00:00:35,952 --> 00:00:38,121
 und andere Kinder kennen zu lernen.
 
 10
-00:00:38,292 --> 00:00:41,709
+00:00:38,288 --> 00:00:41,708
 Wir merken täglich,
 dass Kinder, egal woher sie kommen,
 
 11
-00:00:41,876 --> 00:00:45,209
+00:00:41,875 --> 00:00:45,170
 egal aus welchem Milieu
 und von welcher Schule,
 
 12
-00:00:45,459 --> 00:00:50,125
+00:00:45,420 --> 00:00:50,091
 einfach gerne Kind sind
 und gerne mit anderen spielen.
+

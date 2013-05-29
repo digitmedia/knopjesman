@@ -1,11 +1,6 @@
 ﻿1
 00:00:04,000 --> 00:00:04,375
-CONFIG:1
-FILE:
-TITEL:Extra 6 - Job als begeleider
-Ep.nr.:
-STORY:
-Lang:BEL
+ 
 
 2
 00:00:14,334 --> 00:00:16,334
