@@ -48,11 +48,11 @@
 		EF25E5541743AD5B00188953 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF25E5531743AD5B00188953 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EF2E4E5C17549C3B008E9D30 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2E4E5B17549C3B008E9D30 /* FacebookSDK.framework */; };
 		EF2E4E6017549C64008E9D30 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF2E4E5F17549C64008E9D30 /* FacebookSDKResources.bundle */; };
-		EF2E4E8A17549E8E008E9D30 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E4E8917549E8E008E9D30 /* FacebookConnectPlugin.m */; };
 		EF76E5B3171BFF9C00D63A51 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = EF76E5B2171BFF9C00D63A51 /* Icon-72.png */; };
 		EF76E5B5171BFFA200D63A51 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF76E5B4171BFFA200D63A51 /* Icon-72@2x.png */; };
 		EF76E5B7171BFFAA00D63A51 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EF76E5B6171BFFAA00D63A51 /* Default-Landscape~ipad.png */; };
 		EF76E5B9171BFFB200D63A51 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = EF76E5B8171BFFB200D63A51 /* Default-Landscape@2x~ipad.png */; };
+		EFEEB0771743BE2800B34CA5 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EFEEB0761743BE2800B34CA5 /* FacebookConnectPlugin.m */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 /* End PBXBuildFile section */
 
@@ -156,12 +156,12 @@
 		EF2E4E8317549C6F008E9D30 /* FBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBViewController.h; sourceTree = "<group>"; };
 		EF2E4E8417549C6F008E9D30 /* FBWebDialogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBWebDialogs.h; sourceTree = "<group>"; };
 		EF2E4E8517549C6F008E9D30 /* NSError+FBError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+FBError.h"; sourceTree = "<group>"; };
-		EF2E4E8817549E8E008E9D30 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = plugins/ios/FacebookConnectPlugin.h; sourceTree = SOURCE_ROOT; };
-		EF2E4E8917549E8E008E9D30 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = plugins/ios/FacebookConnectPlugin.m; sourceTree = SOURCE_ROOT; };
 		EF76E5B2171BFF9C00D63A51 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		EF76E5B4171BFFA200D63A51 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		EF76E5B6171BFFAA00D63A51 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		EF76E5B8171BFFB200D63A51 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		EFEEB0751743BE2800B34CA5 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = "../../../../../../Users/jannickvandaele/Downloads/phonegap-facebook-plugin-master/src/ios/FacebookConnectPlugin.h"; sourceTree = "<group>"; };
+		EFEEB0761743BE2800B34CA5 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacebookConnectPlugin.m; path = "../../../../../../Users/jannickvandaele/Downloads/phonegap-facebook-plugin-master/src/ios/FacebookConnectPlugin.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Buttonman/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -411,8 +411,8 @@
 		EFEEB0741743BE0E00B34CA5 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				EF2E4E8817549E8E008E9D30 /* FacebookConnectPlugin.h */,
-				EF2E4E8917549E8E008E9D30 /* FacebookConnectPlugin.m */,
+				EFEEB0751743BE2800B34CA5 /* FacebookConnectPlugin.h */,
+				EFEEB0761743BE2800B34CA5 /* FacebookConnectPlugin.m */,
 			);
 			name = ios;
 			sourceTree = "<group>";
@@ -544,7 +544,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				EF2E4E8A17549E8E008E9D30 /* FacebookConnectPlugin.m in Sources */,
+				EFEEB0771743BE2800B34CA5 /* FacebookConnectPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
