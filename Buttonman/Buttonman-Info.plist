@@ -52,6 +52,8 @@
 	</array>
 	<key>FacebookAppID</key>
 	<string>528247123879915</string>
+	<key>FacebookDisplayName</key>
+	<string>Knopjesman</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
