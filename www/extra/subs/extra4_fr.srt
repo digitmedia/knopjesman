@@ -1,272 +1,273 @@
-﻿1
-00:00:05,834 --> 00:00:08,083
+1
+00:00:01,793 --> 00:00:04,045
 Les enfants ont beaucoup
 à apprendre en milieu d'accueil.
 
 2
-00:00:08,250 --> 00:00:13,167
+00:00:04,212 --> 00:00:09,134
 On veille à diversifier l'offre
 pour aborder une variété de domaines.
 
 3
-00:00:13,334 --> 00:00:17,042
+00:00:09,300 --> 00:00:13,013
 Mais pas de façon scolaire.
 On adopte une approche ludique.
 
 4
-00:00:17,209 --> 00:00:20,667
+00:00:13,179 --> 00:00:16,641
 Ils peuvent par exemple
 améliorer leur néerlandais
 
 5
-00:00:20,834 --> 00:00:22,999
+00:00:16,808 --> 00:00:18,977
 rien qu'en jouant en néerlandais.
 
 6
-00:00:23,125 --> 00:00:27,083
+00:00:19,102 --> 00:00:23,064
 Ce n'est pas une langue obligatoire,
 ça devient une langue de jeu.
 
 7
-00:00:27,250 --> 00:00:31,334
+00:00:23,231 --> 00:00:27,318
 C'est important pour la confiance en soi
 des enfants allophones.
 
 8
-00:00:31,501 --> 00:00:36,042
+00:00:27,485 --> 00:00:32,032
 Je suis convaincue que l'air de rien,
 ils apprennent beaucoup de néerlandais.
 
 9
-00:00:41,501 --> 00:00:46,459
+00:00:37,495 --> 00:00:42,417
 La bibliothèque est source
 de nombreuses angoisses.
 
 10
-00:00:46,626 --> 00:00:48,584
+00:00:42,625 --> 00:00:44,544
 Notre tâche officielle est donc aussi
 
 11
-00:00:48,751 --> 00:00:52,834
+00:00:44,711 --> 00:00:48,798
 de renforcer le plaisir
 de la lecture chez les enfants.
 
 12
-00:00:52,999 --> 00:00:55,417
+00:00:48,965 --> 00:00:51,384
 Il faut le voir
 dans le contexte de l'école.
 
 13
-00:00:55,584 --> 00:00:57,042
+00:00:51,551 --> 00:00:53,011
 Finalement, lire c'est...
 
 14
-00:00:57,209 --> 00:01:02,375
+00:00:53,178 --> 00:00:58,350
 Surtout ici à Bruxelles, pour un grand
 pourcentage d'enfants allophones,
 
 15
-00:01:02,542 --> 00:01:06,501
+00:00:58,516 --> 00:01:02,479
 l'apprentissage de la lecture
 est une tâche ardue.
 
 16
-00:01:06,667 --> 00:01:10,459
+00:01:02,645 --> 00:01:06,441
 Le néerlandais vient s'ajouter
 par-dessus une autre langue.
 
 17
-00:01:10,751 --> 00:01:16,292
+00:01:06,733 --> 00:01:12,280
 'Kas emmène le petit pot
 
 18
-00:01:16,459 --> 00:01:19,334
+00:01:12,447 --> 00:01:15,325
 aux toilettes.'
 
 19
-00:01:20,042 --> 00:01:23,751
+00:01:16,034 --> 00:01:19,746
 Le plaisir de la lecture, c'est le parti
 que nous voulons prendre.
 
 20
-00:01:23,918 --> 00:01:28,792
+00:01:19,913 --> 00:01:24,751
 On aimerait que les enfants
 en arrivent encore à lire après l'école.
 
 21
-00:01:28,959 --> 00:01:33,792
+00:01:24,918 --> 00:01:29,756
 Pour la maîtrise de la langue,
 pour acquérir la langue,
 
 22
-00:01:33,959 --> 00:01:35,876
+00:01:29,923 --> 00:01:31,841
 c'est très important de lire.
 
 23
-00:01:36,000 --> 00:01:40,501
+00:01:31,966 --> 00:01:36,471
 L'aspect technique et aptitude
 à la lecture du contexte scolaire
 
 24
-00:01:40,667 --> 00:01:43,000
+00:01:36,638 --> 00:01:38,973
 est parfois trop restrictif
 pour les enfants.
 
 25
-00:01:43,167 --> 00:01:47,417
+00:01:39,140 --> 00:01:43,395
 C'est une contrainte, et nous voulons
 sortir de ce côté contraignant
 
 26
-00:01:47,584 --> 00:01:52,626
+00:01:43,561 --> 00:01:48,608
 pour mettre du plaisir dans la lecture
 en donnant libre cours aux émotions
 
 27
-00:01:52,792 --> 00:01:54,918
+00:01:48,775 --> 00:01:50,902
 qu'une histoire peut provoquer.
 
 28
-00:01:55,375 --> 00:01:57,792
+00:01:51,361 --> 00:01:53,780
 Combien de pattes a l'araignée ?
 Tu sais ?
 
 29
-00:01:57,959 --> 00:01:59,834
+00:01:53,947 --> 00:01:55,824
 Six.
 - Compte un peu.
 
 30
-00:01:59,999 --> 00:02:01,834
+00:01:55,990 --> 00:01:57,826
 Cinq.
 - Six.
 
 31
-00:02:04,167 --> 00:02:10,042
+00:02:00,161 --> 00:02:06,001
 Cinq, six, sept, huit.
 - Oui, l'araignée a huit pattes.
 
 32
-00:02:10,209 --> 00:02:12,375
+00:02:06,167 --> 00:02:08,336
 En tant qu'éducateur, j'essaye surtout
 
 33
-00:02:12,542 --> 00:02:16,334
+00:02:08,503 --> 00:02:12,298
 que les enfants parlent aussi
 néerlandais pendant les jeux libres.
 
 34
-00:02:16,501 --> 00:02:19,459
+00:02:12,465 --> 00:02:15,427
 Ils passent automatiquement
 à la langue familiale,
 
 35
-00:02:19,626 --> 00:02:21,083
+00:02:15,593 --> 00:02:17,053
 et j'essaye de corriger ça
 
 36
-00:02:21,250 --> 00:02:25,334
+00:02:17,220 --> 00:02:21,307
 en intervenant
 dans la conversation en néerlandais.
 
 37
-00:02:25,501 --> 00:02:27,918
+00:02:21,474 --> 00:02:23,893
 Et ils reviennent
 automatiquement au néerlandais.
 
 38
-00:02:28,042 --> 00:02:31,375
+00:02:24,019 --> 00:02:27,355
 Non, enlève encore un doigt.
 Voilà, ça c'est huit.
 
 39
-00:02:32,042 --> 00:02:33,375
+00:02:28,023 --> 00:02:29,357
 Ton araignée est méchante ?
 
 40
-00:02:33,542 --> 00:02:36,083
+00:02:29,524 --> 00:02:32,068
 En tant qu'accompagnatrice linguistique,
 je forme les éducateurs
 
 41
-00:02:36,250 --> 00:02:40,417
+00:02:32,235 --> 00:02:36,406
 à gérer des groupes multilingues.
 Je les conseille dans leur approche
 
 42
-00:02:40,584 --> 00:02:44,125
+00:02:36,573 --> 00:02:40,118
 avec des enfants qui viennent
 souvent d'une milieu allophone
 
 43
-00:02:44,292 --> 00:02:46,876
+00:02:40,285 --> 00:02:42,871
 et qui arrivent dans
 un milieu d'accueil néerlandophone.
 
 44
-00:02:47,083 --> 00:02:50,501
+00:02:43,079 --> 00:02:46,499
 Vous faites quoi au milieu d'accueil
 avec les copains ?
 
 45
-00:02:50,667 --> 00:02:55,876
+00:02:46,666 --> 00:02:51,838
 On joue ensemble, on joue au football.
 On joue à cache-cache.
 
 46
-00:02:56,000 --> 00:03:01,667
+00:02:51,963 --> 00:02:57,635
 On court, on joue à touche-touche.
 - On fait des jeux, comme Stratego.
 
 47
-00:03:01,834 --> 00:03:07,083
+00:02:57,802 --> 00:03:03,058
 On parle beaucoup néerlandais
 et on joue ensemble.
 
 48
-00:03:07,250 --> 00:03:11,542
+00:03:03,224 --> 00:03:07,520
 Et on est... on se fait des copains.
 - Oui, on se fait des copains.
 
 49
-00:03:12,542 --> 00:03:15,501
+00:03:08,521 --> 00:03:11,483
 Le néerlandais est aussi important
 pour les éducateurs,
 
 50
-00:03:15,667 --> 00:03:18,959
+00:03:11,649 --> 00:03:14,944
 car ils ont aussi l'occasion
 d'améliorer leur néerlandais.
 
 51
-00:03:19,083 --> 00:03:21,334
+00:03:15,070 --> 00:03:17,322
 Ils sont en contact
 avec les enfants et les parents.
 
 52
-00:03:21,501 --> 00:03:24,292
+00:03:17,489 --> 00:03:20,283
 Tout le monde y gagne, au final.
 
 53
-00:03:25,709 --> 00:03:28,125
+00:03:21,701 --> 00:03:24,120
 Avec les enfants,
 on ne parle que le néerlandais.
 
 54
-00:03:28,292 --> 00:03:30,709
+00:03:24,287 --> 00:03:26,706
 Mais dans l'intérêt de la communication,
 
 55
-00:03:30,876 --> 00:03:33,542
+00:03:26,873 --> 00:03:29,501
 on parle toutes les langues
 qu'on connait avec les parents.
 
 56
-00:03:33,709 --> 00:03:37,584
+00:03:29,668 --> 00:03:33,546
 Ça peut être le langage des signes,
 le français, le néerlandais...
 
 57
-00:03:37,751 --> 00:03:42,751
+00:03:33,713 --> 00:03:38,718
 Chaque éducateur peut essayer
 toutes les langues qu'il connait.
+

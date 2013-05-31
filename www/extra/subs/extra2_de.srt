@@ -1,211 +1,212 @@
-﻿1
-00:00:06,125 --> 00:00:10,125
+1
+00:00:02,085 --> 00:00:06,089
 Uns geht es um die Beteiligung
 der Eltern in vielen Bereichen.
 
 2
-00:00:10,375 --> 00:00:13,709
+00:00:06,339 --> 00:00:09,676
 Wir möchten an der Basis anfangen.
 Es geht uns jeden Tag
 
 3
-00:00:13,876 --> 00:00:17,667
+00:00:09,843 --> 00:00:13,638
 um einen angenehmen Kontakt,
 um ein Kennenlernen der Eltern.
 
 4
-00:00:17,834 --> 00:00:21,751
+00:00:13,805 --> 00:00:17,726
 Damit fängt es an.
 Zudem wollen wir Initiativen ergreifen,
 
 5
-00:00:21,918 --> 00:00:23,626
+00:00:17,892 --> 00:00:19,602
 um die Eltern bei der Betreuung
 mit einzubeziehen.
 
 6
-00:00:23,792 --> 00:00:28,209
+00:00:19,769 --> 00:00:24,190
 Das ist uns wichtig, denn die Eltern
 sind die ersten Erzieher.
 
 7
-00:00:28,375 --> 00:00:32,417
+00:00:24,357 --> 00:00:28,403
 Daher sollten sie wissen,
 was ihre Kinder hier alles machen
 
 8
-00:00:32,584 --> 00:00:36,209
+00:00:28,570 --> 00:00:32,198
 und auch wir wollen wissen,
 wie es den Kindern zu Hause geht.
 
 9
-00:00:38,667 --> 00:00:40,876
+00:00:34,659 --> 00:00:36,870
 Unser Team hat sich
 Aktivitäten ausgedacht,
 
 10
-00:00:41,000 --> 00:00:44,209
+00:00:36,995 --> 00:00:40,206
 in die wir die Eltern
 mit einbeziehen können.
 
 11
-00:00:44,375 --> 00:00:46,000
+00:00:40,373 --> 00:00:41,958
 Ein Beispiel ist eine Vorlese-Werkstatt,
 
 12
-00:00:46,167 --> 00:00:49,417
+00:00:42,125 --> 00:00:45,378
 zu der wir die Mütter und Väter
 eingeladen haben.
 
 13
-00:00:49,584 --> 00:00:51,918
+00:00:45,545 --> 00:00:47,881
 Sie haben Bücher
 von zu Hause mitgebracht,
 
 14
-00:00:52,042 --> 00:00:55,709
+00:00:48,006 --> 00:00:51,676
 aus denen sie den Kindern vorgelesen
 haben. Die Erzieher waren auch da.
 
 15
-00:00:55,876 --> 00:01:00,375
+00:00:51,843 --> 00:00:56,348
 Die Stimmung zwischen Eltern, Kindern
 und Erziehern war sehr gut.
 
 16
-00:01:00,542 --> 00:01:02,083
+00:00:56,514 --> 00:00:58,058
 Ein weiteres Beispiel sind Mütter,
 
 17
-00:01:02,250 --> 00:01:05,167
+00:00:58,224 --> 00:01:01,144
 die bei einer Tanzwerkstatt
 mitgemacht haben.
 
 18
-00:01:05,334 --> 00:01:08,584
+00:01:01,311 --> 00:01:04,564
 Sie haben mit den Kindern und Erziehern
 mitgetanzt.
 
 19
-00:01:08,999 --> 00:01:11,042
+00:01:04,981 --> 00:01:07,025
 Wir merkten, dass sowohl die Kinder
 
 20
-00:01:11,209 --> 00:01:13,125
+00:01:07,192 --> 00:01:09,110
 als auch die Mütter viel Spaß hatten,
 
 21
-00:01:13,292 --> 00:01:18,417
+00:01:09,277 --> 00:01:14,407
 etwas miteinander
 und mit unseren Erziehern zu machen.
 
 22
-00:01:18,959 --> 00:01:22,250
+00:01:14,949 --> 00:01:18,244
 Der Kontakt mit den Erziehern
 ist wirklich gut.
 
 23
-00:01:22,417 --> 00:01:24,459
+00:01:18,411 --> 00:01:20,455
 Ja, vor allem wenn man hier
 schon länger ist.
 
 24
-00:01:24,626 --> 00:01:27,876
+00:01:20,622 --> 00:01:23,875
 Einige sind schon ziemlich lange hier.
 
 25
-00:01:28,000 --> 00:01:30,459
+00:01:23,958 --> 00:01:26,419
 Und sie wissen dann viel über uns.
 
 26
-00:01:30,626 --> 00:01:33,584
+00:01:26,586 --> 00:01:29,547
 Sie wissen,
 welche Probleme es zu Hause gibt.
 
 27
-00:01:33,751 --> 00:01:36,083
+00:01:29,714 --> 00:01:32,050
 Sie kümmern sich sehr gut um die Kinder.
 
 28
-00:01:36,250 --> 00:01:38,209
+00:01:32,217 --> 00:01:34,177
 Dorian hat... Ich bin geschieden
 
 29
-00:01:38,375 --> 00:01:41,250
+00:01:34,344 --> 00:01:37,222
 und letztens ist auch
 sein Patenonkel gestorben.
 
 30
-00:01:41,417 --> 00:01:43,918
+00:01:37,389 --> 00:01:39,891
 Sie haben sich alle sehr
 um ihn gekümmert.
 
 31
-00:01:44,042 --> 00:01:45,334
+00:01:40,016 --> 00:01:41,309
 Und uns tut es auch gut,
 
 32
-00:01:45,501 --> 00:01:49,459
+00:01:41,476 --> 00:01:45,438
 wenn wir abends fünf Minuten
 ein Schwätzchen halten können.
 
 33
-00:01:49,626 --> 00:01:51,501
+00:01:45,605 --> 00:01:47,482
 Sie sind eine große Stütze
 
 34
-00:01:51,667 --> 00:01:55,876
+00:01:47,649 --> 00:01:51,861
 für uns und auch für die Kinder.
 Sie sind immer für uns da.
 
 35
-00:01:57,167 --> 00:01:59,042
+00:01:53,154 --> 00:01:55,031
 An der Infowand für die Eltern
 
 36
-00:01:59,209 --> 00:02:02,167
+00:01:55,198 --> 00:01:58,159
 kündigen wir die Aktivitäten
 der Woche an,
 
 37
-00:02:02,334 --> 00:02:05,584
+00:01:58,326 --> 00:02:01,579
 zeigen aber auch Fotos
 von gewesenen Aktivitäten.
 
 38
-00:02:05,751 --> 00:02:09,083
+00:02:01,746 --> 00:02:05,041
 Dann sehen die Eltern,
 was die Kinder bei uns machen
 
 39
-00:02:09,250 --> 00:02:12,751
+00:02:05,208 --> 00:02:08,712
 und auch, zu welchen Partnern
 die Kinder gehen.
 
 40
-00:02:12,918 --> 00:02:16,501
+00:02:08,878 --> 00:02:12,465
 So wird die Partnerzusammenarbeit
 für die Eltern sichtbar.
 
 41
-00:02:19,334 --> 00:02:22,501
+00:02:15,301 --> 00:02:18,471
 In Bezug auf den Beitrag der Eltern
 geht es sozial zu.
 
 42
-00:02:22,751 --> 00:02:25,083
+00:02:18,722 --> 00:02:21,057
 Er ist einkommensabhängig.
 
 43
-00:02:25,250 --> 00:02:27,083
+00:02:21,224 --> 00:02:23,059
 Leute mit dem höchsten Einkommen
 
 44
-00:02:27,250 --> 00:02:29,959
+00:02:23,226 --> 00:02:25,937
 zahlen eine angemessene Summe
 pro halbe Stunde.
 
 45
-00:02:30,083 --> 00:02:34,751
+00:02:26,062 --> 00:02:30,734
 Eltern mit einem niedrigen Einkommen
 zahlen 0,10 Cent pro halbe Stunde.
+

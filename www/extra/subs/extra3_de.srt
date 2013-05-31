@@ -1,48 +1,49 @@
-﻿1
-00:00:11,125 --> 00:00:17,250
+1
+00:00:07,090 --> 00:00:13,221
 Für die Hausaufgabenstunde
 gibt es einen ruhigen Raum,
 
 2
-00:00:17,417 --> 00:00:21,125
+00:00:13,388 --> 00:00:17,100
 in dem die Kinder
 ihre Hausaufgaben machen können.
 
 3
-00:00:28,751 --> 00:00:31,792
+00:00:24,733 --> 00:00:27,777
 Von halb 5 bis halb 6.
 Sind sie um Viertel vor 5 fertig,
 
 4
-00:00:31,999 --> 00:00:35,751
+00:00:27,986 --> 00:00:31,740
 können sie nach draußen gehen.
 Es gibt keine Verpflichtung.
 
 5
-00:00:37,918 --> 00:00:41,918
+00:00:33,908 --> 00:00:37,912
 Die Erzieher bieten
 keine direkte Unterstützung.
 
 6
-00:00:42,042 --> 00:00:44,417
+00:00:38,038 --> 00:00:40,415
 Wir stellen einen ruhigen Raum
 zur Verfügung,
 
 7
-00:00:44,584 --> 00:00:47,292
+00:00:40,582 --> 00:00:43,251
 ohne dort Dinge zu erklären,
 
 8
-00:00:47,459 --> 00:00:49,751
+00:00:43,418 --> 00:00:45,712
 ohne ihnen bei den Hausaufgaben
 zu helfen.
 
 9
-00:00:50,042 --> 00:00:52,584
+00:00:46,004 --> 00:00:48,548
 Die Kinder können sich aber
 gegenseitig unterstützen
 
 10
-00:00:52,751 --> 00:00:56,876
+00:00:48,715 --> 00:00:52,844
 und sich im Grunde somit
 gegenseitig helfen.
+

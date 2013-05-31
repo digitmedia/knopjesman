@@ -1,286 +1,287 @@
 1
-00:00:05,797 --> 00:00:08,049
+00:00:01,793 --> 00:00:04,045
+﻿1
 Kinder können in einem Hort viel lernen.
 
 2
-00:00:08,216 --> 00:00:09,676
+00:00:04,212 --> 00:00:05,672
 Wir sorgen für Abwechslung,
 
 3
-00:00:09,843 --> 00:00:13,138
+00:00:05,839 --> 00:00:09,134
 so dass viele verschiedene Fähigkeiten
 zum Zuge kommen.
 
 4
-00:00:13,304 --> 00:00:17,017
+00:00:09,300 --> 00:00:13,013
 Wir machen das nicht wie in der Schule,
 sondern spielerisch.
 
 5
-00:00:17,183 --> 00:00:20,645
+00:00:13,179 --> 00:00:16,641
 Sie können bei uns auch viel
 Niederländisch lernen,
 
 6
-00:00:20,812 --> 00:00:22,981
+00:00:16,808 --> 00:00:18,977
 indem sie auf Niederländisch spielen.
 
 7
-00:00:23,106 --> 00:00:24,899
+00:00:19,102 --> 00:00:20,895
 Niederländisch ist keine Pflichtsprache,
 
 8
-00:00:25,025 --> 00:00:27,068
+00:00:21,021 --> 00:00:23,064
 sondern eine Sprache,
 in der sie Spaß haben.
 
 9
-00:00:27,235 --> 00:00:29,279
+00:00:23,231 --> 00:00:25,275
 Es ist wichtig für das Selbstvertrauen
 
 10
-00:00:29,446 --> 00:00:32,365
+00:00:25,442 --> 00:00:28,361
 anderssprachiger Kinder.
 Ich bin überzeugt,
 
 11
-00:00:32,532 --> 00:00:36,036
+00:00:28,528 --> 00:00:32,032
 dass sie nebenbei
 viel Niederländisch lernen.
 
 12
-00:00:41,499 --> 00:00:46,421
+00:00:37,495 --> 00:00:42,417
 Uns als Bibliothek
 liegt das sehr am Herzen.
 
 13
-00:00:46,588 --> 00:00:48,548
+00:00:42,625 --> 00:00:44,544
 Es ist unser offizieller Auftrag,
 
 14
-00:00:48,715 --> 00:00:52,802
+00:00:44,711 --> 00:00:48,798
 den Lesespaß bei Kindern zu fördern.
 
 15
-00:00:52,969 --> 00:00:55,388
+00:00:48,965 --> 00:00:51,384
 Das ist im schulischen Rahmen zu sehen.
 
 16
-00:00:55,555 --> 00:00:57,015
+00:00:51,551 --> 00:00:53,011
 Letztendlich ist Lesen
 
 17
-00:00:57,182 --> 00:01:02,354
+00:00:53,178 --> 00:00:58,350
 und sicher in Brüssel mit einem hohen
 Prozentsatz anderssprachiger Kinder,
 
 18
-00:01:02,520 --> 00:01:06,483
+00:00:58,516 --> 00:01:02,479
 ist Lesen, die Lesefertigkeit,
 ein wichtiger Auftrag.
 
 19
-00:01:06,649 --> 00:01:10,445
+00:01:02,645 --> 00:01:06,441
 Die Sprache kommt dazu.
 Niederländisch kommt dazu.
 
 20
-00:01:10,737 --> 00:01:16,284
+00:01:06,733 --> 00:01:12,280
 'Kas nimmt das Töpfchen mit
 
 21
-00:01:16,451 --> 00:01:19,329
+00:01:12,447 --> 00:01:15,325
 auf die Toilette.'
 
 22
-00:01:20,038 --> 00:01:23,750
+00:01:16,034 --> 00:01:19,746
 Lesespaß, das wollen wir vermitteln.
 
 23
-00:01:23,917 --> 00:01:28,755
+00:01:19,913 --> 00:01:24,751
 Wir wollen, dass Kinder nach der Schule
 auch noch zum Lesen kommen.
 
 24
-00:01:28,922 --> 00:01:33,760
+00:01:24,918 --> 00:01:29,756
 Für ihre Sprachfähigkeit,
 für das Erlernen einer Sprache,
 
 25
-00:01:33,927 --> 00:01:35,845
+00:01:29,923 --> 00:01:31,841
 ist Lesen sehr wichtig.
 
 26
-00:01:35,970 --> 00:01:40,475
+00:01:31,966 --> 00:01:36,471
 Solange das in der Schule stattfindet
 mit Lesetechnik, Lesefertigkeit,
 
 27
-00:01:40,642 --> 00:01:42,977
+00:01:36,638 --> 00:01:38,973
 ist das für Kinder
 manchmal einschränkend.
 
 28
-00:01:43,144 --> 00:01:47,399
+00:01:39,140 --> 00:01:43,395
 Es ist eine Aufgabe,
 wir wollen uns davon etwas entfernen
 
 29
-00:01:47,565 --> 00:01:52,612
+00:01:43,561 --> 00:01:48,608
 und Lesespaß bieten. Es geht dabei
 um das emotionale Erlebnis,
 
 30
-00:01:52,779 --> 00:01:54,906
+00:01:48,775 --> 00:01:50,902
 um das, was ein Buch bewirken kann.
 
 31
-00:01:55,365 --> 00:01:57,784
+00:01:51,361 --> 00:01:53,780
 Wie viele Beine hat eine Spinne?
 Weißt du das?
 
 32
-00:01:57,951 --> 00:01:59,828
+00:01:53,947 --> 00:01:55,824
 Sechs.
 - Zähl sie mal.
 
 33
-00:01:59,994 --> 00:02:01,830
+00:01:55,990 --> 00:01:57,826
 Fünf.
 - Sechs.
 
 34
-00:02:04,165 --> 00:02:10,005
+00:02:00,161 --> 00:02:06,001
 Fünf, sechs, sieben, acht.
 - Ja, eine Spinne hat acht Beine.
 
 35
-00:02:10,171 --> 00:02:12,340
+00:02:06,167 --> 00:02:08,336
 Als Erzieher achte ich darauf,
 
 36
-00:02:12,507 --> 00:02:16,302
+00:02:08,503 --> 00:02:12,298
 dass Kinder beim Spielen
 Niederländisch reden.
 
 37
-00:02:16,469 --> 00:02:19,431
+00:02:12,465 --> 00:02:15,427
 Automatisch greifen sie
 auf die Muttersprache zurück.
 
 38
-00:02:19,597 --> 00:02:21,182
+00:02:15,593 --> 00:02:17,178
 Das versuche ich dann zu korrigieren,
 
 39
-00:02:21,391 --> 00:02:25,311
+00:02:17,387 --> 00:02:21,307
 indem ich mich auf Niederländisch
 am Gespräch beteilige.
 
 40
-00:02:25,478 --> 00:02:27,897
+00:02:21,474 --> 00:02:23,893
 Dann schalten sie auf Niederländisch um.
 
 41
-00:02:28,023 --> 00:02:31,359
+00:02:24,019 --> 00:02:27,355
 Nein, noch ein Finger weg.
 Ja, das sind acht.
 
 42
-00:02:32,027 --> 00:02:33,361
+00:02:28,023 --> 00:02:29,357
 Hast du auch eine Spinne?
 
 43
-00:02:33,528 --> 00:02:36,072
+00:02:29,524 --> 00:02:32,068
 Als Sprachförderin
 helfe ich den Erziehern
 
 44
-00:02:36,239 --> 00:02:38,033
+00:02:32,235 --> 00:02:34,029
 im Umgang mit mehrsprachigen Gruppen.
 
 45
-00:02:38,199 --> 00:02:40,410
+00:02:34,195 --> 00:02:36,406
 Ich unterstütze sie beim Umgang
 
 46
-00:02:40,577 --> 00:02:44,122
+00:02:36,573 --> 00:02:40,118
 mit Kindern, die oft aus einer
 anderssprachigen Umgebung stammen
 
 47
-00:02:44,289 --> 00:02:46,875
+00:02:40,285 --> 00:02:42,871
 und in einen niederländischsprachigen
 Hort kommen.
 
 48
-00:02:47,042 --> 00:02:50,462
+00:02:43,079 --> 00:02:46,499
 Was macht ihr im Hort
 so alles mit euren Freunden?
 
 49
-00:02:50,628 --> 00:02:55,842
+00:02:46,666 --> 00:02:51,838
 Wir spielen zusammen,
 wir spielen Fußball, Verstecken,
 
 50
-00:02:55,967 --> 00:03:01,639
+00:02:51,963 --> 00:02:57,635
 Wir rennen, spielen Fangen.
 - Spiele, wie beispielsweise Stratego.
 
 51
-00:03:01,806 --> 00:03:07,062
+00:02:57,802 --> 00:03:03,058
 Viel Niederländisch reden
 und zusammen spielen.
 
 52
-00:03:07,228 --> 00:03:11,524
+00:03:03,224 --> 00:03:07,520
 Und Freunde sein, machen.
 - Freunde sein und Freunde machen.
 
 53
-00:03:12,525 --> 00:03:15,487
+00:03:08,521 --> 00:03:11,483
 Niederländisch ist auch
 für die Erzieher wichtig.
 
 54
-00:03:15,653 --> 00:03:18,948
+00:03:11,649 --> 00:03:14,944
 Es bietet ihnen Möglichkeiten,
 Niederländisch zu lehren.
 
 55
-00:03:19,074 --> 00:03:21,326
+00:03:15,070 --> 00:03:17,322
 Sie haben Kontakt zu Kindern und Eltern.
 
 56
-00:03:21,493 --> 00:03:24,704
+00:03:17,489 --> 00:03:20,700
 Dadurch entsteht eine Win-Win-Situation.
 
 57
-00:03:25,705 --> 00:03:28,124
+00:03:21,701 --> 00:03:24,120
 Wir reden nur Niederländisch
 mit den Kindern.
 
 58
-00:03:28,291 --> 00:03:30,669
+00:03:24,287 --> 00:03:26,706
 Doch im Interesse der Kommunikation
 
 59
-00:03:30,835 --> 00:03:33,505
+00:03:26,873 --> 00:03:29,501
 sprechen wir mit den Eltern
 jede Sprache, die wir können.
 
 60
-00:03:33,672 --> 00:03:37,550
+00:03:29,668 --> 00:03:33,546
 Das kann Gebärdensprache sein,
 Französisch, Niederländisch...
 
 61
-00:03:37,717 --> 00:03:41,262
+00:03:33,713 --> 00:03:37,258
 Jeder Erzieher
 kann die Sprachen sprechen,
 
 62
-00:03:41,429 --> 00:03:42,722
+00:03:37,425 --> 00:03:38,718
 die er beherrscht.
 

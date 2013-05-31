@@ -1,39 +1,44 @@
 1
-00:00:11,094 --> 00:00:17,225
+00:00:07,048 --> 00:00:13,179
+1
 Pour l'heure de devoirs, on crée
 simplement un espace calme
 
 2
-00:00:17,392 --> 00:00:21,104
+00:00:13,346 --> 00:00:17,058
 où les enfants sont mis en condition
 pour faire leurs devoirs.
 
 3
-00:00:28,737 --> 00:00:31,781
+00:00:24,691 --> 00:00:27,736
 C'est de 16h30 à 17h30.
 Si un enfant a fini à 17h15,
 
 4
-00:00:31,990 --> 00:00:35,744
+00:00:27,944 --> 00:00:31,698
 il peut parfaitement sortir.
 Il n'y a aucune obligation.
 
 5
-00:00:37,912 --> 00:00:41,916
+00:00:33,867 --> 00:00:37,871
 Les éducateurs ne sont pas là
 pour orienter les enfants.
 
 6
-00:00:42,000 --> 00:00:44,377
+00:00:37,996 --> 00:00:40,373
 On leur propose plutôt un lieu calme,
 
 7
-00:00:44,544 --> 00:00:49,716
+00:00:40,540 --> 00:00:45,670
 on ne donne pas vraiment d'explications,
 on ne les aide pas à faire les devoirs.
 
 8
-00:00:50,008 --> 00:00:56,431
+00:00:45,962 --> 00:00:52,385
 Mais il arrive que les enfants
 se soutiennent ou s'entraident.
+
+9
+00:00:45,962 --> 00:00:52,385
+
 
