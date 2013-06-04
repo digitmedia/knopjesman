@@ -224,7 +224,12 @@
 
             // GO BACK BUTTON
             $(".return").click(function() {
-                window.location = "home.html";
+                if(getUrlVars()["start"] !== "undefined"){
+                    window.location = "scene.html";
+                } else {
+                    window.location = "home.html";
+                }
+                
             })
 
             
