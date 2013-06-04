@@ -115,9 +115,9 @@
 
             function createTable(tx) {
                 console.log("DEBUGGING: we are in the createTable() function");
-                tx.executeSql( 'DROP TABLE IF EXISTS MENU',nullHandler,nullHandler);
-                tx.executeSql( 'DROP TABLE IF EXISTS PIECES',nullHandler,nullHandler);
-                tx.executeSql( 'DROP TABLE IF EXISTS TEXTS',nullHandler,nullHandler);
+                // tx.executeSql( 'DROP TABLE IF EXISTS MENU',nullHandler,nullHandler);
+                // tx.executeSql( 'DROP TABLE IF EXISTS PIECES',nullHandler,nullHandler);
+                // tx.executeSql( 'DROP TABLE IF EXISTS TEXTS',nullHandler,nullHandler);
                 
                 //TEXTS TABLE
                 tx.executeSql('CREATE TABLE IF NOT EXISTS TEXTS (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, page TEXT NOT NULL, date DATETIME NOT NULL)', [], nullHandler, errorHandler);
