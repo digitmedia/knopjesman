@@ -76,6 +76,9 @@
         </script>
         <script type="text/javascript">
             $(document).ready(function() {
+                if(device.version < 6.0){
+                    $("[data='social']").hide();
+                }
                 $(".return").click(function() {
                     window.location = "home.html";
                 });
