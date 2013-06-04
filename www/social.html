@@ -68,7 +68,7 @@
                     getLoginStatus()
                 });
                 
-                              $("a[href^='http://']").live('click', function() {
+                              $(document).on('click',"a[href^='http://']", function() {
                                                              event.preventDefault()
                                                              alert('User clicked on "foo."');
                                                              });
@@ -80,7 +80,7 @@
                     feeds: {
                         twitter: {
                             id: '#Knopjesman, #ButtonmanOutOfSchoolCare, @knopjesman',
-                            url: 'http://jannickvandaele.be/twitter.php',
+                            url: 'hhttp://knopjesman.org/apiknopjesman/twitter.php',
                             thumb: true
                         },
                         facebook: {

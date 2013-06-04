@@ -18,59 +18,68 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/reset.css" />
-        <link rel="stylesheet" type="text/css" href="css/buttonman.css" />
-        <title>Buttonman</title>
-    </head>
-    <body onload="onBodyLoad()" class="info">
-        <div class="row underline">
-            <h1>Info</h1>
-        </div>
-        <div class="row margin-top">
-            <div id="content">
-                <div class="info-left">
-                    <h1 class="return"><img src="img/arrow.png" height="30" class="reverse"/> Terug</h1>
-                </div>
-                <div class="info-right">
-                    
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttonman.css" />
+    <title>Buttonman</title>
+</head>
+<body onload="onBodyLoad()" class="info">
+    <div class="row underline">
+        <h1>Info</h1>
+    </div>
+    <div class="row margin-top">
+        <div id="content">
+            <div class="info-left">
+                <h1 class="return"><img src="img/arrow.png" height="30" class="reverse"/> Terug</h1>
+            </div>
+            <div class="info-right">
+
             </div>
         </div>
-        
+    </div>
 
 
-        <script type="text/javascript" src="cordova-2.6.0.js"></script>
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript">
-        app.initialize();
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".return").click(function() {
-                    window.location = "home.html";
-                });
-                if(getUrlVars()["title"] !== "undefined"){                      
-                            $(".title").html(decodeURI(getUrlVars()["title"]));                                           
-                    }
+
+    <script type="text/javascript" src="cordova-2.6.0.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+    app.initialize();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".return").click(function() {
+                window.location = "home.html";
             });
-
-            function getUrlVars() {
-                var vars = {};
-                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
-                    vars[key] = value;
-                });
-                return vars;
+            if(getUrlVars()["title"] !== "undefined"){                      
+                $(".title").html(decodeURI(getUrlVars()["title"]));                                           
             }
+        });
 
-            // global variables
-            if (localStorage.getItem("lang") === null) {
-                var lang = 'nl';
-            } else {
-                var lang = window.localStorage.getItem("lang");
-            }
-            
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        // global variables
+        if (localStorage.getItem("lang") === null) {
+            var lang = 'nl';
+        } else {
+            var lang = window.localStorage.getItem("lang");
+        }
+
+        var text = new Array();
+        text["nl"] =  '<p>Knopjesman:&nbsp;Keuzes maken in buitenschoolse opvang</p> <h1>Free time is a good time</h1> <h3>Kinderen komen in hun vrije tijd naar de buitenschoolse opvang. Wil je dat ze dat als &eacute;chte vrije tijd ervaren, dan zorg je dat ze keuzes kunnen maken. Want vrije tijd is doen waar je zin in hebt. Alleen spelen of met vrienden? Iets actief of iets rustig? Onder begeleiding of op zichzelf? &ldquo;Knopjesman&rdquo; laat zien hoe het er aan toe gaat in verschillende initiatieven voor buitenschoolse opvang in Brussel. Samen met organisaties en scholen uit de buurt cre&euml;ren de begeleiders een brede waaier aan keuzeactiviteiten om vrije tijd voor kinderen boeiend te maken.</h3> <p>In Brussel spelen kinderen overal: thuis, op de stoep en in het park. Gaan ze na school of tijdens vakantiedagen naar de buitenschoolse opvang, dan worden de avonturen in hun vrije tijd nog veel spannender. Samen met hun begeleiders trekken kinderen dan naar het circus, ze fietsen met fluohesjes door het bos of ze gaan naar de bibliotheek. Ze scoren een goal tijdens een heus &ldquo;interbuitenschools voetbaltoernooi&rdquo;, ze verkleden zich met kartonnen dozen in knopjesman en klampen tijdens een opdrachtenspel de buurtbewoners aan. Het allerbelangrijkste van de vrije tijd in de buitenschoolse opvang, is dat kinderen mogen kiezen wat ze doen. Hoe de opvangmedewerkers dit realiseren, lichten zij in deze film zelf toe. Enerzijds werken ze in de opvang aan een warm nest: hoe zorgen we dat kinderen zich hier thuis voelen? Wat biedt hen rust, veiligheid en comfort? Anderzijds werken medewerkers in de opvang aan een rijk web: welke waaier aan activiteiten kunnen we de kinderen bieden? Hoe kunnen we voor een gevarieerd aanbod samenwerken met buurt- en andere partnerorganisaties? Nest en web zijn elementen waar elke buitenschoolse opvang op inzet. Daarom inspireert deze film over Nederlandstalige initiatieven voor buitenschoolse opvang in Brussel alle opvangmedewerkers, zowel in de stedelijke context als daarbuiten.</p> <h1>Voor wie?</h1> <p>&ldquo;Knopjesman&rdquo; laat ouders, scholen en partnerorganisaties kennismaken met de werking van buitenschoolse opvang voor kinderen van 21/2 tot 12 jaar. Daarnaast wil &ldquo;Knopjesman&rdquo; ook medewerkers uit buitenschoolse opvang inspireren om te werken aan de nest- en webfunctie van buitenschoolse opvang: hoe kun je werken aan een warme omgeving, gezellige activiteiten, contact met de buurt en samenwerkingsverbanden met partnerorganisaties? Tot slot is &ldquo;Knopjesman&rdquo; ook een geschikt reflectie- en trainingsinstrument voor professionele begeleiders, studenten, docenten en pedagogische coaches die de vrije tijd van kinderen warm, leerrijk en spannend willen maken. Een uitgebreide handleiding met tips en reflectie-oefeningen vind je op www.vbjk.be/knopjesman</p> <h1>Credits</h1> <p><strong>Idee &amp; concept:</strong> Caroline Boudry, Katrien Van Laere Research,&nbsp;<br /> <strong>scenario &amp; interviews:</strong> Caroline Boudry, Brecht Peleman Regie: Guido Verelst, Caroline Boudry<br /> <strong>Camera:</strong> Joris Ceuppens Geluid: Yvan de Beer<br /> <strong>Montage:</strong> Guido Verelst - Deep Focus Grading: Frank Temmerman<br /> <strong>Muziek:</strong> Cyril Orcel Mixage: Yves De Mey<br /> <strong>Grafisch design iPad app:</strong> Lucas De Wilde - Wildtlab<br /> <strong>iPad app-productie:</strong> Luc Peeters &amp; Jannick Vandaele - Digitmedia<br /> <br /> <strong>Met dank aan</strong> alle kinderen, ouders en medewerkers van Nederlandstalige Initiatieven voor Buitenschoolse Opvang in Brussel: De Buiteling, De Puzzel, De Rivieren, De Verliefde Wolk, Kik en Nekkersdal.<br /> <strong>Met dank aan</strong> Bibliotheek Jette, Buurtsport Brussel, Circus Zonder Handen, Educatief Theater Antwerpen, Huis van het Nederlands Brussel, Inloop Huis der Gezinnen, Jeugdcentrum Chicago, gemeentelijke basisschool Kameleon, Muziekinstrumentenmuseum, Sippelberg Sint- Jans-Molenbeek, en Spelotheek Walala.<br /> <strong>En met dank aan</strong> Sylvie Decoster, Wendy Gettemans, Anne Geeroms, Antoinette Huysmans, Ellie Kuipers, B&eacute;n&eacute;dicte Kusendila, Liesbet Meyns, Jan Peeters, Ellen Rutgeerts (red.), Elke Van den Ende, Ilse Verbeke, David Vits, Sylvia Walraevens.</p> <p>Deze film kwam tot stand in een gezamenlijk project van <a href="http://www.vgc.be/" target="_blank">VGC</a> en <a href="http://www.vbjk.be/" target="_blank">VBJK</a>.</p> <p>&copy;VBJK 2013</p> <p><strong>Verantwoordelijke uitgever: </strong><br /> Eric Verrept, Leidend ambtenaar Vlaamse Gemeenschapscommissie Emile Jacqmainlaan 135, 1000 Brussel</p> ';
+
+        text["fr"] = '<p>Knopjesman:&nbsp;Keuzes maken in buitenschoolse opvang</p> <h1>Le temps libre, c&rsquo;est du temps de loisir</h1> <h3>Kinderen komen in hun vrije tijd naar de buitenschoolse opvang. Wil je dat ze dat als &eacute;chte vrije tijd ervaren, dan zorg je dat ze keuzes kunnen maken. Want vrije tijd is doen waar je zin in hebt. Alleen spelen of met vrienden? Iets actief of iets rustig? Onder begeleiding of op zichzelf? &ldquo;Knopjesman&rdquo; laat zien hoe het er aan toe gaat in verschillende initiatieven voor buitenschoolse opvang in Brussel. Samen met organisaties en scholen uit de buurt cre&euml;ren de begeleiders een brede waaier aan keuzeactiviteiten om vrije tijd voor kinderen boeiend te maken.</h3> <p>In Brussel spelen kinderen overal: thuis, op de stoep en in het park. Gaan ze na school of tijdens vakantiedagen naar de buitenschoolse opvang, dan worden de avonturen in hun vrije tijd nog veel spannender. Samen met hun begeleiders trekken kinderen dan naar het circus, ze fietsen met fluohesjes door het bos of ze gaan naar de bibliotheek. Ze scoren een goal tijdens een heus &ldquo;interbuitenschools voetbaltoernooi&rdquo;, ze verkleden zich met kartonnen dozen in knopjesman en klampen tijdens een opdrachtenspel de buurtbewoners aan. Het allerbelangrijkste van de vrije tijd in de buitenschoolse opvang, is dat kinderen mogen kiezen wat ze doen. Hoe de opvangmedewerkers dit realiseren, lichten zij in deze film zelf toe. Enerzijds werken ze in de opvang aan een warm nest: hoe zorgen we dat kinderen zich hier thuis voelen? Wat biedt hen rust, veiligheid en comfort? Anderzijds werken medewerkers in de opvang aan een rijk web: welke waaier aan activiteiten kunnen we de kinderen bieden? Hoe kunnen we voor een gevarieerd aanbod samenwerken met buurt- en andere partnerorganisaties? Nest en web zijn elementen waar elke buitenschoolse opvang op inzet. Daarom inspireert deze film over Nederlandstalige initiatieven voor buitenschoolse opvang in Brussel alle opvangmedewerkers, zowel in de stedelijke context als daarbuiten.</p> <h1>Voor wie?</h1> <p>&ldquo;Knopjesman&rdquo; laat ouders, scholen en partnerorganisaties kennismaken met de werking van buitenschoolse opvang voor kinderen van 21/2 tot 12 jaar. Daarnaast wil &ldquo;Knopjesman&rdquo; ook medewerkers uit buitenschoolse opvang inspireren om te werken aan de nest- en webfunctie van buitenschoolse opvang: hoe kun je werken aan een warme omgeving, gezellige activiteiten, contact met de buurt en samenwerkingsverbanden met partnerorganisaties? Tot slot is &ldquo;Knopjesman&rdquo; ook een geschikt reflectie- en trainingsinstrument voor professionele begeleiders, studenten, docenten en pedagogische coaches die de vrije tijd van kinderen warm, leerrijk en spannend willen maken. Een uitgebreide handleiding met tips en reflectie-oefeningen vind je op www.vbjk.be/knopjesman</p> <h1>Credits</h1> <p><strong>Idee &amp; concept:</strong> Caroline Boudry, Katrien Van Laere Research,&nbsp;<br /> <strong>scenario &amp; interviews:</strong> Caroline Boudry, Brecht Peleman Regie: Guido Verelst, Caroline Boudry<br /> <strong>Camera:</strong> Joris Ceuppens Geluid: Yvan de Beer<br /> <strong>Montage:</strong> Guido Verelst - Deep Focus Grading: Frank Temmerman<br /> <strong>Muziek:</strong> Cyril Orcel Mixage: Yves De Mey<br /> <strong>Grafisch design iPad app:</strong> Lucas De Wilde - Wildtlab<br /> <strong>iPad app-productie:</strong> Luc Peeters &amp; Jannick Vandaele - Digitmedia<br /> <br /> <strong>Met dank aan</strong> alle kinderen, ouders en medewerkers van Nederlandstalige Initiatieven voor Buitenschoolse Opvang in Brussel: De Buiteling, De Puzzel, De Rivieren, De Verliefde Wolk, Kik en Nekkersdal.<br /> <strong>Met dank aan</strong> Bibliotheek Jette, Buurtsport Brussel, Circus Zonder Handen, Educatief Theater Antwerpen, Huis van het Nederlands Brussel, Inloop Huis der Gezinnen, Jeugdcentrum Chicago, gemeentelijke basisschool Kameleon, Muziekinstrumentenmuseum, Sippelberg Sint- Jans-Molenbeek, en Spelotheek Walala.<br /> <strong>En met dank aan</strong> Sylvie Decoster, Wendy Gettemans, Anne Geeroms, Antoinette Huysmans, Ellie Kuipers, B&eacute;n&eacute;dicte Kusendila, Liesbet Meyns, Jan Peeters, Ellen Rutgeerts (red.), Elke Van den Ende, Ilse Verbeke, David Vits, Sylvia Walraevens.</p> <p>Deze film kwam tot stand in een gezamenlijk project van <a href="http://www.vgc.be/" target="_blank">VGC</a> en <a href="http://www.vbjk.be/" target="_blank">VBJK</a>.</p> <p>&copy;VBJK 2013</p> <p><strong>Verantwoordelijke uitgever: </strong><br /> Eric Verrept, Leidend ambtenaar Vlaamse Gemeenschapscommissie Emile Jacqmainlaan 135, 1000 Brussel</p>'; 
+
+        text["en"] = '<h1>Vrije tijd is fijne tijd</h1> <h3>Kinderen komen in hun vrije tijd naar de buitenschoolse opvang. Wil je dat ze dat als &eacute;chte vrije tijd ervaren, dan zorg je dat ze keuzes kunnen maken. Want vrije tijd is doen waar je zin in hebt. Alleen spelen of met vrienden? Iets actief of iets rustig? Onder begeleiding of op zichzelf? &ldquo;Knopjesman&rdquo; laat zien hoe het er aan toe gaat in verschillende initiatieven voor buitenschoolse opvang in Brussel. Samen met organisaties en scholen uit de buurt cre&euml;ren de begeleiders een brede waaier aan keuzeactiviteiten om vrije tijd voor kinderen boeiend te maken.</h3> <p>In Brussel spelen kinderen overal: thuis, op de stoep en in het park. Gaan ze na school of tijdens vakantiedagen naar de buitenschoolse opvang, dan worden de avonturen in hun vrije tijd nog veel spannender. Samen met hun begeleiders trekken kinderen dan naar het circus, ze fietsen met fluohesjes door het bos of ze gaan naar de bibliotheek. Ze scoren een goal tijdens een heus &ldquo;interbuitenschools voetbaltoernooi&rdquo;, ze verkleden zich met kartonnen dozen in knopjesman en klampen tijdens een opdrachtenspel de buurtbewoners aan. Het allerbelangrijkste van de vrije tijd in de buitenschoolse opvang, is dat kinderen mogen kiezen wat ze doen. Hoe de opvangmedewerkers dit realiseren, lichten zij in deze film zelf toe. Enerzijds werken ze in de opvang aan een warm nest: hoe zorgen we dat kinderen zich hier thuis voelen? Wat biedt hen rust, veiligheid en comfort? Anderzijds werken medewerkers in de opvang aan een rijk web: welke waaier aan activiteiten kunnen we de kinderen bieden? Hoe kunnen we voor een gevarieerd aanbod samenwerken met buurt- en andere partnerorganisaties? Nest en web zijn elementen waar elke buitenschoolse opvang op inzet. Daarom inspireert deze film over Nederlandstalige initiatieven voor buitenschoolse opvang in Brussel alle opvangmedewerkers, zowel in de stedelijke context als daarbuiten.</p> <h1>Voor wie?</h1> <p>&ldquo;Knopjesman&rdquo; laat ouders, scholen en partnerorganisaties kennismaken met de werking van buitenschoolse opvang voor kinderen van 21/2 tot 12 jaar. Daarnaast wil &ldquo;Knopjesman&rdquo; ook medewerkers uit buitenschoolse opvang inspireren om te werken aan de nest- en webfunctie van buitenschoolse opvang: hoe kun je werken aan een warme omgeving, gezellige activiteiten, contact met de buurt en samenwerkingsverbanden met partnerorganisaties? Tot slot is &ldquo;Knopjesman&rdquo; ook een geschikt reflectie- en trainingsinstrument voor professionele begeleiders, studenten, docenten en pedagogische coaches die de vrije tijd van kinderen warm, leerrijk en spannend willen maken. Een uitgebreide handleiding met tips en reflectie-oefeningen vind je op www.vbjk.be/knopjesman</p> <h1>Credits</h1> <p><strong>Idee &amp; concept:</strong> Caroline Boudry, Katrien Van Laere Research,&nbsp;<br /> <strong>scenario &amp; interviews:</strong> Caroline Boudry, Brecht Peleman Regie: Guido Verelst, Caroline Boudry<br /> <strong>Camera:</strong> Joris Ceuppens Geluid: Yvan de Beer<br /> <strong>Montage:</strong> Guido Verelst - Deep Focus Grading: Frank Temmerman<br /> <strong>Muziek:</strong> Cyril Orcel Mixage: Yves De Mey<br /> <strong>Grafisch design iPad app:</strong> Lucas De Wilde - Wildtlab<br /> <strong>iPad app-productie:</strong> Luc Peeters &amp; Jannick Vandaele - Digitmedia<br /> <br /> <strong>Met dank aan</strong> alle kinderen, ouders en medewerkers van Nederlandstalige Initiatieven voor Buitenschoolse Opvang in Brussel: De Buiteling, De Puzzel, De Rivieren, De Verliefde Wolk, Kik en Nekkersdal.<br /> <strong>Met dank aan</strong> Bibliotheek Jette, Buurtsport Brussel, Circus Zonder Handen, Educatief Theater Antwerpen, Huis van het Nederlands Brussel, Inloop Huis der Gezinnen, Jeugdcentrum Chicago, gemeentelijke basisschool Kameleon, Muziekinstrumentenmuseum, Sippelberg Sint- Jans-Molenbeek, en Spelotheek Walala.<br /> <strong>En met dank aan</strong> Sylvie Decoster, Wendy Gettemans, Anne Geeroms, Antoinette Huysmans, Ellie Kuipers, B&eacute;n&eacute;dicte Kusendila, Liesbet Meyns, Jan Peeters, Ellen Rutgeerts (red.), Elke Van den Ende, Ilse Verbeke, David Vits, Sylvia Walraevens.</p> <p>Deze film kwam tot stand in een gezamenlijk project van <a href="http://www.vgc.be/" target="_blank">VGC</a> en <a href="http://www.vbjk.be/" target="_blank">VBJK</a>.</p> <p>&copy;VBJK 2013</p> <p><strong>Verantwoordelijke uitgever: </strong><br /> Eric Verrept, Leidend ambtenaar Vlaamse Gemeenschapscommissie Emile Jacqmainlaan 135, 1000 Brussel</p>'; 
+
+        text["de"] = '<p>Kn&ouml;pfchenmann: Wahlm&ouml;glichkeiten im Hort</p> <h1>Freizeit ist gute Zeit</h1> <h3>Kinder verbringen einen Teil ihrer Freizeit im Hort. Wenn man m&ouml;chte, dass sie das auch als echte Freizeit empfinden, sorgt man daf&uuml;r, dass sie Wahlm&ouml;glichkeiten haben. Denn in der Freizeit macht man, worauf man Lust hat. Allein spielen oder mit Freunden? Etwas Aktives oder etwas Ruhiges? Betreut oder selbstst&auml;ndig? &bdquo;Kn&ouml;pfchenmann&ldquo; zeigt, wie es in interschiedlichen Br&uuml;sseler Horten zugeht. Gemeinsam mit Einrichtungen und Schulen aus der Gegend sorgen die Erzieher f&uuml;r einen breiten F&auml;cher an Aktivit&auml;tsm&ouml;glichkeiten, um die Freizeit f&uuml;r Kinder spannend zu gestalten.</h3> <p>In Br&uuml;ssel spielen Kinder &uuml;berall: zu Hause, auf dem B&uuml;rgersteig und im Park. Wenn sie nach der Schule und in den Ferien in den Hort gehen, werden die Abenteuer in ihrer Freizeit noch viel aufregender. Gemeinsam mit ihren Erziehern gehen die Kinder in den Zirkus, fahren in Warnwesten mit dem Rad durch den Wald oder besuchen die Bibliothek. Sie schie&szlig;en ein Tor beim&nbsp; &bdquo;interau&szlig;erschulischen Fu&szlig;ballturnier&ldquo;, sie verkleiden sich mit Kartons als Kn&ouml;pfchenmann oder kommen auf spielerische Weise in Kontakt mit den Bewohnern des Viertels. Das Allerbeste an der Freizeit im Hort ist, dass Kinder w&auml;hlen k&ouml;nnen, was sie machen m&ouml;chten. Wie die Hortmitarbeiter das umsetzen, erl&auml;utern wir in diesem Film. Einerseits arbeiten sie im Hort an einem warmen Nest: Wie sorgen wir daf&uuml;r, dass sich die Kinder hier ganz wie zu Hause f&uuml;hlen? Was gibt ihnen Ruhe, Sicherheit und Geborgenheit? Andererseits arbeiten die Mitarbeiter im Hort an einem Netzwerk: Welchen F&auml;cher an Aktivit&auml;ten k&ouml;nnen wir den Kindern bieten? Wie k&ouml;nnen wir f&uuml;r ein abwechslungsreiches Angebot mit Instanzen im Viertel und mit weiteren Partnereinrichtungen zusammenarbeiten? Nest und Netz sind Elemente, auf die jeder Hort setzt. Darum inspiriert dieser Film &uuml;ber niederl&auml;ndischsprachige Initiativen f&uuml;r au&szlig;erschulische Betreuung in Br&uuml;ssel alle Hortmitarbeiter und zwar sowohl in st&auml;dtischen&nbsp; als auf l&auml;ndlichen Gebieten.</p> <h1>F&uuml;r wen?</h1> <p>&bdquo;Kn&ouml;pfchenmann&ldquo; zeigt Eltern, Schulen und Partnereinrichtungen die Methode eines Horts f&uuml;r Kinder von 21/2 bis 12 Jahren. Zudem m&ouml;chte &bdquo;Kn&ouml;pfchenmann&ldquo; Mitarbeiter in der au&szlig;erschulischen Betreuung auch dazu inspirieren, an der Nest- und Netzfunktion eines Horts zu arbeiten: Wie realisiert man ein warmes Umfeld, reizvolle Aktivit&auml;ten, den Kontakt mit dem Viertel sowie die Zusammenarbeit mit Partnereinrichtungen? Und schlie&szlig;lich ist &bdquo;Kn&ouml;pfchenmann&ldquo; f&uuml;r Erzieher, Studenten, Dozenten und p&auml;dagogische Koordinatoren, die die Freizeit von Kindern warm, lehrreich und aufregend gestalten m&ouml;chten, auch ein geeignetes Reflexions- und Schulungsinstrument.&nbsp;</p> <h1>Credits</h1> <p><strong>Idea &amp; concept: </strong>Caroline Boudry, Katrien Van Laere<br /> <strong>Research, scenario &amp; interviews: </strong>Caroline Boudry, Brecht Peleman<br /> <strong>Directed by: </strong>Guido Verelst, Caroline Boudry<br /> <strong>Camera</strong>: Joris Ceuppens<br /> <strong>Sound:</strong> Yvan de Beer<br /> <strong>Film editing:</strong> Guido Verelst - Deep Focus<br /> <strong>Grading: </strong>Frank Temmerman<br /> <strong>Music:</strong> Cyril Orcel<br /> <strong>Mix sound: </strong>Yves De Mey<br /> <strong>Graphic design iPad app: </strong>Lucas De Wilde - Wildtlab<br /> <strong>iPad app production: </strong>Luc Peeters &amp; Jannick Vandaele - Digitmedia</p> <p><strong>Dank</strong> alle Kinder, Eltern und Mitarbeiter der niederl&auml;ndischen au&szlig;erschulischen Betreuung in Br&uuml;ssel: De Buiteling, De Puzzel, De Rivieren, De Verliefde Wolk, Kik and Nekkersdal.&nbsp;</p> <p><strong>Dank</strong> Bibliotheek Jette, Buurtsport Brussel, Circus Zonder Handen, Educatief Theater Antwerpen, Inloop Huis der Gezinnen, Jeugdcentrum Chicago, gemeentelijke basisschool Kameleon, Muziekinstrumentenmuseum, Sippelberg Sint- Jans-Molenbeek and Spelotheek Walala.</p> <p><strong>Dank</strong> Sylvie Decoster, Wendy Gettemans, Anne Geeroms, Antoinette Huysmans, Ellie Kuipers, B&eacute;n&eacute;dicte Kusendila, Liesbet Meyns, Jan Peeters, Ellen Rutgeerts (red.), Elke Van den Ende, Ilse Verbeke, David Vits, Sylvia Walraevens.</p> <p>Dieser Film kam in einem Gemeinschaftsprojekt von <a href="http://www.vgc.be">VGC</a> und <a href="http://www.vbjk.be/en">VBJK</a> zustande.</p> <p>&copy;VBJK 2013</p> <p><strong>Verantwortlicher Herausgeber:</strong><br /> Eric Verrept, leitender Beamter Vlaamse Gemeenschapscommissie, Emile Jacqmainlaan 135, 1000 Br&uuml;ssel</p> ';
+
             var db;
             var shortName = 'ButtonManDB';
             var version = '1.0';
@@ -79,7 +88,8 @@
 
             // this is called when an error happens in a transaction
             function errorHandler(transaction, error) {
-                console.log('Error: ' + error.message + ' code: ' + error.code);
+                console.log("woops");
+                //console.log('Error: ' + error.message + ' code: ' + error.code);
 
             }
 
@@ -106,172 +116,82 @@
                 db = openDatabase(shortName, version, displayName, maxSize);
 
                 //Create Table
-                db.transaction(createTable, errorHandler, fillIfEmpty);
-
-
-
-
-            }
-
-            // list the values in the database to the screen using jquery toupdate the #lbUsers element
-            function ListDBValues() {
-
-                if (!window.openDatabase) {
-                    console.log('Databases are not supported in this browser.');
-                    return;
-                }
-
-                // this line clears out any content in the #lbUsers element on thepage so that the next few lines will show updated
-                // content and not just keep repeating lines
-                $('#lbUsers').html('');
-
-                // this next section will select all the content from the User table and then go through it row by row
-                // appending the UserId  FirstName  LastName to the  #lbUsers elementon the page
-                db.transaction(function(transaction) {
-                    transaction.executeSql('SELECT * FROM User;', [],
-                            function(transaction, result) {
-                                if (result != null && result.rows != null) {
-                                    for (var i = 0; i < result.rows.length; i++) {
-                                        var row = result.rows.item(i);
-                                        $('#lbUsers').append('<br>' + row.UserId + '. ' +
-                                                row.FirstName + ' ' + row.LastName);
-                                    }
-                                }
-                            }, errorHandler);
-                }, errorHandler, nullHandler);
-
-                return;
-
-            }
-
-            // this is the function that puts values into the database using thevalues from the text boxes on the screen
-            function AddValuesToDB() {
-
-                if (!window.openDatabase) {
-                    console.log('Databases are not supported in this browser.');
-                    return;
-                }
-
-                // this is the section that actually inserts the values into the Usertable
-                db.transaction(function(transaction) {
-                    transaction.executeSql('INSERT INTO User(FirstName, LastName) VALUES (?,?)', [$('#txFirstName').val(), $('#txLastName').val()],
-                            nullHandler, errorHandler);
-
-                });
-
-                // this calls the function that will show what is in the User table inthe database
-                ListDBValues();
-
-                return false;
-
-            }
-
-            function createTable(tx) {
-                console.log("DEBUGGING: Creating/reading Table")
-                //tx.executeSql( 'DROP TABLE TEXTS',nullHandler,nullHandler);
-                tx.executeSql('CREATE TABLE IF NOT EXISTS TEXTS (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, page TEXT NOT NULL, date DATETIME NOT NULL)', [], nullHandler, errorHandler);
-                console.log("DEBUGGING: Table Created/read")
-            }
-
-            function fillIfEmpty() {
-                //Fill Table if empty   
-                console.log("DEBUGGING: check if empty")
-                db.transaction(function(transaction) {
-                    transaction.executeSql('SELECT * FROM TEXTS', [],
-                            function(transaction, result) {
-                                if (result.rows.length === 0) {
-                                    console.log("DEBUGGING: Table Empty");
-                                    db.transaction(populateDB, errorHandler, loadContent);
-                                } else {
-                                    console.log("DEBUGGING: Table not empty: " + result.rows.length + " rows");
-                                    loadContent();
-                                }
-                            }, errorHandler);
-                }, errorHandler);
-            }
-
-            function populateDB(tx) {
-                tx.executeSql('INSERT INTO TEXTS (id, lang, val, page, date) VALUES (1, "nl" ,"Dummy Default Text Nederlands" ,"info", "2013-04-19 10:23:00")');
-                tx.executeSql('INSERT INTO TEXTS (id, lang, val, page, date) VALUES (2, "en" ,"Dummy Default Text English"    ,"info", "2013-04-19 10:23:00")');
-                tx.executeSql('INSERT INTO TEXTS (id, lang, val, page, date) VALUES (3, "fr" ,"Dummy Default Text Français"   ,"info", "2013-04-19 10:23:00")');
-                tx.executeSql('INSERT INTO TEXTS (id, lang, val, page, date) VALUES (4, "de" ,"Dummy Default Text Deutsch"    ,"info", "2013-04-19 10:23:00")');
-                console.log("DEBUGGING: Database populated");
-                 tx.executeSql('SELECT * FROM TEXTS', [],
-                            function(transaction, result) {
-                                if (result.rows.length === 0) {
-                                    console.log("DEBUGGING: Still Empty");
-                                } else {
-                                    console.log("DEBUGGING: Table not empty: " + result.rows.length + " rows");
-                                }
-                            });
+                loadContent();
             }
 
             function loadContent() {
                 console.log("DEBUGGING: loading content in: "+lang)
                 db.transaction(function(transaction) {
-                    //GET TEXT FROM DB
+                    //GET RETURN BUTTON
                     transaction.executeSql("SELECT * FROM PIECES WHERE lang = '" + lang + "' AND page = 'all'", [], function(transaction, result) {
-                                //ADD TEXT TO CONTENT
-                                console.log("DEBUGGING: "+result.rows.length+" rows found");
-                                for(var i=0; i<result.rows.length; i++){
-                                    switch(result.rows.item(i).key){
-                                        case "back":
-                                            $(".return").html('<img src="img/arrow.png" height="30" class="reverse"/> '+result.rows.item(i).val);
-                                            break;
-                                    }                                
-                               }  
-                            }, errorHandler);
-                    transaction.executeSql("SELECT * FROM TEXTS WHERE lang = '" + lang + "'", [],
-                            function(transaction, result) {
-                                //ADD TEXT TO CONTENT
-                                $(".info-right").html(result.rows.item(0).val);
-                                console.log("DEBUGGING: Added to content: " + result.rows.item(0).val);
+                        //ADD TEXT TO CONTENT
+                        console.log("DEBUGGING: "+result.rows.length+" rows found");
+                        for(var i=0; i<result.rows.length; i++){
+                            switch(result.rows.item(i).key){
+                                case "back":
+                                $(".return").html('<img src="img/arrow.png" height="30" class="reverse"/> '+result.rows.item(i).val);
+                                break;
+                            }                                
+                        }  
+                    }, errorHandler);
+
+                    //GET INFO TEXT
+                    transaction.executeSql("SELECT * FROM TEXTS WHERE lang = '" + lang + "'", [], function(transaction, result) {
+                        //ADD TEXT TO CONTENT
+                        if(result.rows.item(0).val === "empty"){
+                            $(".info-right").html(text[lang]);
+                        } else {
+                            $(".info-right").html(result.rows.item(0).val);
+                        }
+                        console.log("DEBUGGING: Added to content: " + result.rows.item(0).val);
+                        
+                        // CHECK INTERNET CONNECTION FOR UPDATING
+                        var test = true;
+                        if (test) {
+                            console.log("DEBUGGING: hier");
+                            //GET SERVER UPDATE DATE
+                            $.getJSON('http://knopjesman.org/apiknopjesman/get/updatedate/info', function(data) {
+                                console.log("DEBUGGING: Update date server: " + data[0].datetime);
+                                console.log("DEBUGGING: Update date local:  " + result.rows.item(0).date);
                                 
-                                // CHECK INTERNET CONNECTION FOR UPDATING
-                                if (navigator.connection.type !== Connection.NONE) {
-                                    //GET SERVER UPDATE DATE
-                                    $.getJSON('http://localhost:8888/slim/get/updatedate/info', function(data) {
-                                        console.log("DEBUGGING: Update date server: " + data[0].datetime);
-                                        console.log("DEBUGGING: Update date local:  " + result.rows.item(0).date);
-                                        
-                                        //COMPARE DATES
-                                        if (data[0].datetime <= result.rows.item(0).date) {
-                                            console.log("DEBUGGING: up to date");
-                                        } else {
+                                //COMPARE DATES
+                                if (data[0].datetime <= result.rows.item(0).date) {
+                                    console.log("DEBUGGING: up to date");
+                                } else {
+                                    console.log("DEBUGGING: need to update");
+                                    
+                                    $.getJSON('http://knopjesman.org/apiknopjesman/get/text/info/' + lang, function(data) {
 
-                                            console.log("DEBUGGING: need to update");
-                                            
-                                            $.getJSON('http://localhost:8888/slim/get/text/info/' + lang, function(data) {
+                                        //Add it to the content
+                                        $(".info-right").html(data[0].val.toString());
+                                        console.log("DEBUGGING: new data added to content");
 
-                                                //Add it to the content
-                                                $(".info-right").html(data[0].val.toString());
-                                                console.log("DEBUGGING: new data added to content");
+                                        //Update the database
+                                        db.transaction(function(tx) {
+                                            tx.executeSql("UPDATE TEXTS SET val='" + data[0].val + "', date='" + data[0].datetime + "' WHERE id=" + result.rows.item(0).id);
+                                            console.log("UPDATE TEXTS SET val='" + data[0].val + "', date='" + data[0].datetime + "' WHERE id=" + result.rows.item(0).id);
+                                            console.log("DEBUGGING: Database Updated");                                                    
+                                        });
 
-                                                //Update the database
-                                                db.transaction(function(tx) {
-                                                    tx.executeSql("UPDATE TEXTS SET val='" + data[0].val + "', date='" + data[0].datetime + "' WHERE id=" + result.rows.item(0).id);
-                                                    console.log("UPDATE TEXTS SET val='" + data[0].val + "', date='" + data[0].datetime + "' WHERE id=" + result.rows.item(0).id);
-                                                    console.log("DEBUGGING: Database Updated");                                                    
-                                                });
-                                                db.transaction(function(tx) {
-                                                    tx.executeSql("SELECT * FROM TEXTS", [],
-                                                        function(transaction, result) {
-                                                            console.log("DATE: "+result.rows.item(0).date);
-                                                        });
-                                                })
-
+                                        db.transaction(function(tx) {
+                                            tx.executeSql("SELECT * FROM TEXTS", [],
+                                            function(transaction, result) {
+                                                console.log("DATE: "+result.rows.item(0).date);
                                             });
-                                        }
-                                        ;
+                                        })
+
                                     });
-                                } else { console.log("DEBUGGING: No Internet!"); }
-                                
-                            }, errorHandler);
+                                };
+                            });
+                        } else { 
+                            console.log("DEBUGGING: No Internet!"); 
+                        }
+                    }, errorHandler);
                 }, errorHandler, successCallBack);
             }
 
 
 
-        </script>
-    </body>
+</script>
+</body>
 </html>

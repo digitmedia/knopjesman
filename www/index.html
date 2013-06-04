@@ -117,10 +117,10 @@
                 console.log("DEBUGGING: we are in the createTable() function");
                 tx.executeSql( 'DROP TABLE IF EXISTS MENU',nullHandler,nullHandler);
                 tx.executeSql( 'DROP TABLE IF EXISTS PIECES',nullHandler,nullHandler);
-                //tx.executeSql( 'DROP TABLE TEXTS',nullHandler,nullHandler);
+                tx.executeSql( 'DROP TABLE IF EXISTS TEXTS',nullHandler,nullHandler);
                 
                 //TEXTS TABLE
-                //tx.executeSql('CREATE TABLE IF NOT EXISTS TEXTS (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, page TEXT NOT NULL, date DATETIME NOT NULL)', [], nullHandler, errorHandler);
+                tx.executeSql('CREATE TABLE IF NOT EXISTS TEXTS (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, page TEXT NOT NULL, date DATETIME NOT NULL)', [], nullHandler, errorHandler);
                 
                 //MENU TABLE
                 tx.executeSql('CREATE TABLE IF NOT EXISTS MENU (id INTEGER NOT NULL PRIMARY KEY, lang TEXT NOT NULL, val TEXT NOT NULL, page TEXT, internetreq TEXT NOT NULL, menu TEXT NOT NULL)', [], nullHandler, errorHandler);
@@ -274,6 +274,12 @@
                 tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (30, "fr", "all" , "back"              , "Retour")');  
                 tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (31, "en", "all" , "back"              , "Back")');        
                 tx.executeSql('INSERT INTO PIECES (id, lang, page, key, val) VALUES (32, "de", "all" , "back"              , "zurück")');      
+
+
+                tx.executeSql("INSERT INTO TEXTS (id, lang, val, page, date) VALUES (1, 'nl' ,'empty' ,'info', '2013-04-19 10:23:00')");
+                tx.executeSql("INSERT INTO TEXTS (id, lang, val, page, date) VALUES (2, 'en' ,'empty' ,'info', '2013-04-19 10:23:00')");
+                tx.executeSql("INSERT INTO TEXTS (id, lang, val, page, date) VALUES (3, 'fr' ,'empty' ,'info', '2013-04-19 10:23:00')");
+                tx.executeSql("INSERT INTO TEXTS (id, lang, val, page, date) VALUES (4, 'de' ,'empty' ,'info', '2013-04-19 10:23:00')");
                              
                 console.log("DEBUGGING: Database populated");             
             }
