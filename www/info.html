@@ -48,6 +48,13 @@
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
+
+            $(document).on('click',"a[href^='http://']", function() {
+                                                             event.preventDefault()
+                                                             alert($(this).attr("href"));
+                                                             window.open($(this).attr("href"), '_blank', 'location=yes');
+                                                             });
+            
             $(".return").click(function() {
                 window.location = "home.html";
             });

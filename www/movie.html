@@ -87,6 +87,8 @@
                 $(".title").html(decodeURI(getUrlVars()["title"]));
             }
 
+            
+
             //VIDEO CONTROLS
             var container = $(".videocontainer");
             var video = $("video");
@@ -152,6 +154,9 @@
             });
 
             video[0].addEventListener("loadedmetadata", function() {
+                if(getUrlVars()["start"] !== "undefined"){
+                    $("video")[0].currentTime = parseInt(getUrlVars()["start"]);
+                }
                 remaining.html("-" + gettime(video[0].duration));
                 current.html(gettime(0));
             });
@@ -219,7 +224,7 @@
 
             // GO BACK BUTTON
             $(".return").click(function() {
-                window.location = "extra.html";
+                window.location = "home.html";
             })
 
             

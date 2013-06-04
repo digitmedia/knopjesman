@@ -211,6 +211,7 @@
         .info-right p, .info-right h3{
             margin: 15px 0px;
             width: 100%;
+            line-height: 20px;
         }
 
         .info-right strong{

@@ -65,7 +65,7 @@
                         var start  = $(this).data("start");
                         var pieces = start.split(":");
                         var sec = parseInt(pieces[0])*60+parseInt(pieces[1]);
-                       window.location = "movie.html?start="+sec;
+                       window.location = "movie.html?start="+sec+"&title="+$(this).html();
                    } 
                })
                 $('.pageselect').on( "touchstart mousedown ", "a", function(e){
