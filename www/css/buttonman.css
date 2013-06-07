@@ -196,7 +196,7 @@
         .info-right{
             float: right;
             width: 744px;
-            height: 652px;
+            height: 632px;
             overflow: scroll;
             -webkit-overflow-scrolling: touch;
             color: #000;
@@ -381,7 +381,7 @@
 
         .info{
             padding-top: 0px;
-            height: 728px;
+            height: 708px;
         }
 
         .info .underline {
