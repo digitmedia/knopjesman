@@ -25,31 +25,31 @@
         <link rel="stylesheet" type="text/css" href="css/dcsns_wall.css" media="all" />
         <title>Buttonman</title>
     </head>
-    <body class="info">
+    <body onload="onBodyLoad()" class="info social">
         <div id="fb-root" style="z-index:999;"></div>
         <div class="row underline" style="overflow: hidden;">
             <h1 style="float:left;">Social</h1>
-            <div class="socialicons" style="float:left; padding:5px 0 0 80px;">
+            <div class="socialicons" style="float:left; padding:0px 0 0 82px;">
                 <a href="https://twitter.com/knopjesman" style="text-decoration:none;">
-                    <img src="images/twitter.png" alt="" height="35px">
+                    <img src="images/social_tw.png" alt="" height="48px">
                 </a>
                 <a href="https://www.facebook.com/Knopjesman">
-                    <img src="images/facebook.png" alt="" height="35px">
+                    <img src="images/social_fb.png" alt="" height="48px">
                 </a>
             </div>
-            <div class="sharebuttons" style="float:right; padding:5px 48px 0 0">
-                <a onclick="getLoginStatus()"><img src="images/share-button-facebook.png" height="35px"></a>
+            <div class="sharebuttons" style="float:right;">
+                <a onclick="getLoginStatus()"><img src="images/social_fb_share.png" height="48px"></a>
                 <a href="https://twitter.com/intent/tweet?text=I'm%20watching%20@knopjesman%20,%20an%20inspiring%20movie%20about%20out%20of%20school%20care.%20Download%20the%20iPad%20app%20from%20iTunes:%20http://appstore.com/knopjesmankeuzesmakeninbuitenschoolseopvang">
-                    <img src="images/share-button-twitter.png"  height="35px">
+                    <img src="images/social_tw_share.png"  height="48px">
                 </a>
 
             </div>
         </div>
-        <div class="row margin-top">
+        <div class="row">
             <div id="content">
                 <div class="info-left">
 
-                    <h1 class="return"><img src="img/arrow.png" height="30" class="reverse"/> Terug</h1>
+                    <h1 class="return"><img src="img/arrow.png" height="23" class="reverse"/> Terug</h1>
                 </div>
                 <div class="info-right">
                     <div id="social-stream"></div>
@@ -153,32 +153,6 @@
             }
             var friendIDs = [];
             var fdata;
-            function me() {
-                FB.api('/me/friends', {fields: 'id, name, picture'}, function(response) {
-                    if (response.error) {
-                        console.log(JSON.stringify(response.error));
-                    } else {
-                        var data = document.getElementById('data');
-                        fdata = response.data;
-                        console.log("fdata: " + fdata);
-                        response.data.forEach(function(item) {
-                            var d = document.createElement('div');
-                            d.innerHTML = "<img src=" + item.picture + "/>" + item.name;
-                            data.appendChild(d);
-                        });
-                    }
-                    var friends = response.data;
-                    console.log(friends.length);
-                    for (var k = 0; k < friends.length && k < 200; k++) {
-                        var friend = friends[k];
-                        var index = 1;
-
-                        friendIDs[k] = friend.id;
-                        //friendsInfo[k] = friend;
-                    }
-                    console.log("friendId's: " + friendIDs);
-                });
-            }
 
             function logout() {
                 FB.logout(function(response) {
@@ -189,12 +163,12 @@
             function login() {
                 FB.login(
                         function(response) {
+                            console.log(response.status);
                             facebookWallPost();
                         },
                         {scope: "email"}
                 );
             }
-
 
             function facebookWallPost() {
                 console.log('Debug 1');
@@ -212,30 +186,6 @@
                 });
             }
 
-            function publishStoryFriend() {
-                randNum = Math.floor(Math.random() * friendIDs.length);
-
-                var friendID = friendIDs[randNum];
-                if (friendID == undefined) {
-                    alert('please click the me button to get a list of friends first');
-                } else {
-                    console.log("friend id: " + friendID);
-                    console.log('Opening a dialog for friendID: ', friendID);
-                    var params = {
-                        method: 'feed',
-                        to: friendID.toString(),
-                        name: 'Facebook Dialogs',
-                        link: 'https://developers.facebook.com/docs/reference/dialogs/',
-                        picture: 'http://fbrell.com/f8.jpg',
-                        caption: 'Reference Documentation',
-                        description: 'Dialogs provide a simple, consistent interface for applications to interface with users.'
-                    };
-                    FB.ui(params, function(obj) {
-                        console.log(obj);
-                    });
-                }
-            }
-
             document.addEventListener('deviceready', function() {
                 try {
                     console.log('Device is ready! Make sure you set your app_id below this alert.');
@@ -244,6 +194,60 @@
                     console.log(e);
                 }
             }, false);
+
+            var db;
+        var shortName = 'ButtonManDB';
+        var version = '1.0';
+        var displayName = 'ButtonManDB';
+        var maxSize = 200000;
+
+        // global variables
+        if (localStorage.getItem("lang") === null) {
+            var lang = 'nl';
+        } else {
+            var lang = window.localStorage.getItem("lang");
+        }
+
+            // this is called when an error happens in a transaction
+            function errorHandler(transaction, error) {
+                console.log("woops error");
+            }
+
+            // this is called when a successful transaction happens
+            function successCallBack() {
+                console.log("DEBUGGING: success");
+            }
+            function nullHandler() {
+            }
+
+            // called when the application loads
+            function onBodyLoad() {
+                if (!window.openDatabase) {
+                    console.log('Databases are not supported in this browser.');
+                    return;
+                }
+                db = openDatabase(shortName, version, displayName, maxSize);
+                loadContent()
+            }
+            
+            function loadContent() {
+                console.log("DEBUGGING: loading content in: "+lang)
+                db.transaction(function(transaction) {
+                    //GET TEXT FROM DB
+                    transaction.executeSql("SELECT * FROM PIECES WHERE lang = '" + lang + "' AND page = 'all'", [], function(transaction, result) {
+                                //ADD TEXT TO CONTENT
+                                console.log("DEBUGGING: "+result.rows.length+" rows found");
+                                for(var i=0; i<result.rows.length; i++){
+                                    switch(result.rows.item(i).key){
+                                     case "back":
+                                     $(".return").html('<img src="img/arrow.png" height="23" class="reverse"/> '+result.rows.item(i).val);
+                                     break;
+                                 }                                
+                             }  
+                         }, errorHandler);
+                }, errorHandler, successCallBack);
+            }
+
 
         </script>
 
