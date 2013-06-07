@@ -196,7 +196,7 @@
         .info-right{
             float: right;
             width: 744px;
-            height: 630px;
+            height: 652px;
             overflow: scroll;
             -webkit-overflow-scrolling: touch;
             color: #000;
@@ -379,4 +379,23 @@
             display: block;
         }
 
+        .info{
+            padding-top: 0px;
+            height: 728px;
+        }
+
+        .info .underline {
+            border-bottom: #ef3e2e 9px solid;
+        }
+
+        .info .row {
+            padding: 20px 0;
+        }
+
+
+
+        .social .info-right {
+            margin: 0 -10px 0 10px;
+            height: 649px;
+        }
 
